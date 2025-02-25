@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+
+:root {
+    --color-accent: #ec4899; /* Colore arancione */
+    --second-color:#f472b6; 
+    --bg-w-color: #ffffff;
+    --bg-b-color: #0d0d0d; 
+    --color-hover:#333333; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Geist', sans-serif;
+}
+
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Navigation Bar */
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding: 1rem 5%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+
+.navbar-nav {
+    display: flex;                /* Usa Flexbox per distribuire i link */
+    justify-content: space-between; /* Distribuisci uniformemente i link */
+    align-items: center;           /* Centra verticalmente gli elementi */
+    gap: 1.5rem;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 3rem;           /* Aggiungi spazio tra gli elementi del menu */
+}
+
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    transition: color 0.3s ease-in-out;
+}
+
+/* Aggiungi l'effetto hover e active */
+.navbar-nav .nav-link:hover, 
+.navbar-nav .nav-link.active {
+    color: var(--color-accent); /* Colore al passaggio del mouse */
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+
+}
+.heading {
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 64px;
+
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+    background: var(--text-color);
+}
+
+.footer-text {
+    font-size: 1rem;
+    color: var(--bg-color);
+}
+
+.footer-icons a {
+    font-size: 1.5rem;
+    color: var(--bg-color);
+    padding-left: 2rem;
+    text-decoration: none; /* Rimuove qualsiasi sottolineatura */
+  }

@@ -1,0 +1,57 @@
+
+@media (max-width: 768px) {
+
+    navbar-collapse {
+        text-align: left; /* Allinea il testo a sinistra */
+    }
+
+    .navbar-nav {
+        margin-top: 20px; /* Aggiungi margine superiore */
+    }
+    .nav-item {
+        width: 100%; /* Ogni voce occupa tutta la larghezza disponibile */
+        margin-left: 6%;
+    }
+    
+
+    .home {
+        min-height: 60vh; /* Riduce ulteriormente l'altezza */
+        background-size: cover; /* Mantiene la copertura */
+        background-position: center; /* Centra meglio l'immagine */
+        flex-direction: column; /* Disposizione verticale */
+        align-items: left;
+        padding: 50px 20px; /* Aggiunge spaziatura */
+    }
+
+    .home-content h1 {
+        font-size: 3.5rem; /* Riduce il titolo su mobile */
+    }
+
+    .home-content h3 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .scroll-btn i {
+        font-size: 1rem; /* Riduce l'icona */
+    }
+    .heading {
+        font-size: 2rem; /* Riduce il titolo su dispositivi mobili */
+        margin-bottom: 30px; /* Riduce il margine inferiore */
+    }
+    .projects-container {
+        grid-template-columns: repeat(1, 1fr); /* Una colonna su schermi piccoli */
+        gap: 1.5rem; /* Spazio tra i progetti */
+
+}
+.services-container {
+    grid-template-columns: 1fr; /* Una colonna sola */
+    gap: 1.5rem;
+
+}
+
+@media (max-width: 480px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
+}
