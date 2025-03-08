@@ -141,26 +141,24 @@
 
 }
 
-
-/* Sezione Tool */
 .tool-section {
-    text-align: center;
-    padding: 4rem 10%;
+    margin: 4rem 0%;
+    text-align: center; /* Centra il contenuto della sezione */
 }
 
 .tool-icons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    gap: 2rem; /* Aumentato lo spazio tra le icone */
-    margin-top: 2rem;
+    display: flex; /* Imposta il contenitore come un flexbox */
+    justify-content: space-evenly; /* Distribuisce lo spazio tra le icone in modo uniforme */
+    flex-wrap: wrap; /* Permette alle icone di andare su più righe se necessario */
+    gap: 1rem; /* Aggiunge spazio tra le icone */
+    margin-top: 2.5rem; /* Distanza dalla sezione superiore */
 }
 
 .tool-icon {
-    width: 80px; /* Dimensione icone */
-    height: 80px; /* Imposta un'altezza fissa */
+    width: 80px; /* Larghezza fissa per tutte le icone */
+    height: 80px; /* Altezza fissa per tutte le icone */
     object-fit: contain; /* Mantiene le proporzioni delle icone */
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out; /* Aggiunge un effetto hover */
 }
 
 .tool-icon:hover {

@@ -22,6 +22,65 @@
     margin-bottom: 4rem;
   }
 
+  .hero-section {
+    padding-left: 4rem; /* Riduci il padding sinistro */
+    padding-right: 4rem; /* Aggiungi padding a destra per bilanciare */
+    text-align: left;
+}
+
+.hero-title {
+    font-size: 4.5rem; /* Adatta il font-size per schermi intermedi */
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+}
+
+.hero-button {
+    font-size: 1.1rem;
+    padding: 0.8rem 1.5rem; /* Regola la dimensione del bottone */
+}
+
+/* Ottimizzazione per la sezione 'About' */
+.about-section {
+    padding: 3rem 5%;
+    text-align: left;
+}
+
+.about-container {
+    flex-direction: row; /* Torna alla disposizione orizzontale delle immagini e del testo */
+}
+
+.about-image {
+    max-width: 45%; /* Ottimizza la larghezza dell'immagine */
+}
+
+.about-text {
+    max-width: 50%;
+}
+
+/* Sezione education and skills */
+.education-and-skills {
+    gap: 4rem; /* Aggiungi più spazio tra le colonne */
+}
+
+.education-column, .skills-column {
+    width: 48%; /* Ottimizza le larghezze delle colonne */
+    text-align: left; /* Allinea il testo a sinistra */
+}
+
+/* Ottimizzazione per tool-icons */
+.tool-icons {
+    justify-content: space-between; /* Dispone le icone in modo equidistante */
+    margin-top: 3rem;
+}
+
+.tool-icon {
+    width: 50px; /* Larghezza ottimizzata per icone di dimensione media */
+    height: 50px;
+}
+
+
   .projects-container {
       grid-template-columns: repeat(2, 1fr);
   }
@@ -247,14 +306,12 @@
             width: 100%;
             text-align: center;
         }
- .tool-icons {
-    gap: 1rem; /* Spazio tra le icone sui dispositivi piccoli */
-    justify-content: center; /* Allinea le icone a sinistra */
-    flex-wrap: wrap; /* Le icone vanno a capo su schermi piccoli */
-}
-
-.tool-icon {
-    width: 40px; /* Riduce la larghezza delle icone per schermi piccoli */
-    height: 40px; /* Riduce l'altezza delle icone per schermi piccoli */
-}
-}
+        .tool-icons {
+            justify-content: center; /* Centra le icone se lo spazio è molto ridotto */
+        }
+    
+        .tool-icon {
+            width: 32px; /* Riduce ulteriormente la dimensione delle icone su schermi molto piccoli */
+            height: 32px; /* Riduce l'altezza delle icone su schermi molto piccoli */
+        }
+    }
