@@ -1,0 +1,317 @@
+/* Media Query per dispositivi con larghezza tra 768px e 1200px */
+@media (min-width: 768px) and (max-width: 1200px) {
+
+    .custom-navbar-toggler {
+        display: none; 
+    }
+
+  .header {
+      height: 500px;
+      background-size: cover;
+      background-position: center;
+  }
+
+  .header h1 {
+      font-size: 2.5rem;
+  }
+
+  .header .h3-slim {
+    font-weight: 600;
+    font-size: 1rem; 
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  .projects-container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-top: 2rem; /* Aggiunto spazio sopra */
+}
+
+.sub-title {
+    font-size: 1rem;
+    margin-bottom: 2.5rem; /* Aggiunto più spazio sotto */
+}
+
+.contact-form {
+    padding: 15px;
+    margin-bottom: 3rem; /* Distanza extra dal fondo */
+}
+
+.button {
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.button-full {
+    width: 100%;
+}
+
+
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr); /* Due colonne */
+    width: 90%;
+}
+
+.portfolio-box {
+    max-width: 400px;
+}
+
+.portfolio-box img {
+    width: 100%;
+    height: auto; /* Mantiene le proporzioni */
+    object-fit: cover;
+}
+
+  .education-and-skills {
+      gap: 5rem;
+      padding: 3rem 30px;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+  }
+
+  .large {
+      font-size: 2.2rem;
+      margin-bottom: 2.5rem;
+  }
+
+  .body-1 {
+      font-size: 1.4rem;
+  }
+
+  .body-2 {
+      font-size: 1.1rem;
+  }
+
+  .body {
+      font-size: 0.95rem;
+      margin-bottom: 2.5rem;
+  }
+  .tool-icon {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+}
+
+/* Media Query per dispositivi mobili (max-width: 767px) */
+@media (max-width: 767px) {
+
+  .navbar-nav {
+      text-align: left;
+      margin-top: 20px;
+      display: block; /* Assicurati che il menu occupi tutta la larghezza */
+       width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .nav-item {
+      width: 100%;
+      margin-left: 3rem;
+  }
+
+
+  .header {
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+  }
+
+  .header-content {
+    margin-left: 2rem;  /* Riduci il margine sinistro */
+    margin-right: 2rem; /* Aggiungi spazio a destra */
+  }
+
+
+  .header h1 {
+      font-size: 2rem;
+  }
+
+  .heading-h2 {
+      font-size: 2rem;
+  }
+
+  .header .h3-slim {
+      font-size: 1.2rem;
+  }
+
+
+  .projects {
+      margin-bottom: 4rem;
+  }
+
+  .projects-container {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+  }
+
+  .projects-box {
+      max-width: 90%;
+  }
+
+  .projects-box img {
+      width: 100%;
+      max-height: 250px;
+      object-fit: cover;
+  }
+
+  .projects-layer h4 {
+      font-size: 1.2rem;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+}
+
+.button-full {
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
+  .contact h2 {
+    font-size: 2rem;
+    margin-top: 3rem; /* Più spazio sopra */
+    text-wrap: nowrap;
+}
+
+.sub-title {
+    font-size: 1rem;
+    margin-bottom: 1.5rem; /* Più spazio sotto */
+   
+}
+
+.contact-form {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 4rem; /* Più spazio sotto */
+}
+
+
+.portfolio-container {
+    grid-template-columns: 1fr; /* Una colonna */
+    width: 100%;
+}
+
+.portfolio-box {
+    width: 90%;
+    max-width: 350px;
+}
+
+.portfolio-box img {
+    width: 100%;
+    height: auto; /* Mantiene le proporzioni */
+    object-fit: cover;
+}
+
+  .portfolio-layer h4 {
+      font-size: 1.2rem;
+  }
+
+  .footer {
+      flex-direction: column;
+      text-align: center;
+      padding: 1.5rem 5%;
+  }
+
+  .footer-icons a {
+      padding-left: 1rem;
+  }
+
+.header-about {
+    height: 60vh; /* Riduci l'altezza per dispositivi mobili */
+    background-size: cover;
+    background-position: center;
+  }
+
+  .heading-h1 {
+    font-size: 3rem; /* Riduci la dimensione del testo per schermi piccoli */
+    text-align: left; /* Centra il testo */
+  }
+
+  .h3 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+
+  .button.left-aligned-about {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem; /* Riduci le dimensioni del bottone per mobile */
+  }
+  .information-about-me {
+    flex-direction: column; /* Impila verticalmente l'immagine e il testo */
+    padding: 30px 20px; /* Riduci il padding */
+}
+
+.information-grid {
+    flex-direction: column; /* Impila la griglia verticalmente */
+    gap: 2rem; /* Aggiungi gap tra l'immagine e il testo */
+    align-items: center; /* Centra gli elementi */
+}
+
+.image-container-about-me {
+    width: 200px; /* Riduci la dimensione dell'immagine */
+    height: 200px;
+}
+
+.text-container {
+    margin-left: 0; /* Rimuovi il margine a sinistra */
+    text-align: left; /* Centra il testo per mobile */
+    max-width: 100%; /* Limita la larghezza al 100% */
+}
+
+
+  .education-and-skills {
+    flex-direction: column; /* Impila verticalmente le colonne */
+    gap: 2rem; /* Riduci il gap tra le colonne */
+    padding: 2rem 20px; /* Riduci il padding */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.education-column, .skills-column {
+    max-width: 100%; /* Le colonne occupano tutta la larghezza disponibile */
+    width: 100%; /* Forza la larghezza al 100% */
+}
+
+.large {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.body-1 {
+    font-size: 1.2rem;
+}
+
+.body-2 {
+    font-size: 1rem;
+}
+
+.body {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.tool-icons {
+    justify-content: center; /* Mantiene il centro */
+    gap: 1.5rem;
+}
+
+.tool-icon {
+    max-width: 44px;
+    max-height: 44px;
+}
+}
