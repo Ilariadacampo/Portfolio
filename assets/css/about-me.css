@@ -127,9 +127,16 @@
 .body {
     font-size: 1.1rem;
     line-height: 1.6;
+    margin-bottom: 3rem;
 }
 
 /* Liste skills */
+
+.soft-skills {
+    margin-bottom: 4rem;
+
+}
+
 .skills-list {
     list-style: none;
     padding-left: 0;
