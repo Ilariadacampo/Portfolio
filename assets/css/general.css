@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+
+:root {
+    --color-accent: #ec4899; 
+    --second-color:#f472b6; 
+    --bg-w-color: #ffffff;
+    --bg-b-color: #212529; 
+    --color-active:#db2777; 
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Geist', sans-serif;
+}
+
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+body {
+  background: var(--bg-w-color);
+  color: var(--bg-b-color);
+}
+
+/* Navigation Bar */
+
+.navbar-container {
+    width: 100%;
+}
+
+.navbar {
+    padding: 1rem 5%;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--bg-w-color);
+}
+
+
+.navbar-nav {
+    display: flex;                
+    justify-content: space-between;
+    align-items: center;           /* Centra verticalmente gli elementi */
+    gap: 1.5rem;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 3rem;           /* Aggiungi spazio tra gli elementi del menu */
+}
+
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    transition: color 0.3s ease-in-out;
+}
+
+/* Aggiungi l'effetto hover e active */
+.navbar-nav .nav-link:hover {
+    color: var(--second-color); /* Colore al passaggio del mouse */
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--color-active); /* Colore al passaggio del mouse */
+}
+
+.custom-navbar-toggler {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white; /* Cambia colore se necessario */
+}
+
+.custom-navbar-toggler i {
+  transition: opacity 0.3s;
+}
+
+.custom-navbar-toggler .bi-x {
+  font-size: 2rem; /* Leggermente più grande per coerenza */
+}
+
+
+/* HEADER */
+
+
+
+ .heading-h2 { 
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 4rem;
+
+}
+
+/* Sezione contatti */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Occupa l'intera altezza della finestra */
+    background-image: url('../media/web_2.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 3rem; /* Dimensione del font */
+    font-weight: 600; /* Spessore del font */
+    color: var(--text-color); /* Colore del testo */
+  }
+  
+  .sub-title {
+    font-size: 1.2rem; /* Dimensione del font */
+    color: var(--text-color); /* Colore del testo */
+    margin-top: 1rem; /* Distanza tra il titolo e il testo */
+    margin-bottom: 2rem;
+    font-weight: 400; /* Peso del font */
+    text-align: center; /* Centra il testo */
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Contenitore degli input e del bottone */
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Assicura che il contenitore occupi tutta la larghezza */
+  }
+  
+  .contact-form label {
+    display: block; /* Rende l'etichetta un blocco e la sposta sopra l'input */
+    font-size: 1rem; /* Dimensione del font dell'etichetta */
+    margin-bottom: 5px; /* Distanza tra l'etichetta e l'input */
+    text-align: left; /* Allinea il testo a sinistra */
+    color: var(--text-color); /* Colore del testo per l'etichetta */
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%; /* Occupa tutta la larghezza del contenitore */
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 1.5rem;
+    box-sizing: border-box; /* Includi padding e bordi nella larghezza */
+  }
+  
+  /* Disabilita il ridimensionamento per la textarea */
+  .form-group textarea {
+    resize: none; /* Disabilita il ridimensionamento */
+  }
+  
+
+
+/* Footer */
+
+.footer { 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+    background: var(--bg-b-color);
+}
+
+.footer-text {
+    font-size: 1rem;
+    color: var(--bg-w-color);
+}
+
+.footer-icons a {
+    font-size: 1.5rem;
+    color: var(--bg-w-color);
+    padding-left: 2rem;
+    text-decoration: none; /* Rimuove qualsiasi sottolineatura */
+  }
+
+  .footer-icons a:hover{
+     color: var(--second-color);
+  }
+  .footer-icons a:active{
+    color: var(--color-active);
+ }
+
+ /* Stile generico per tutti i bottoni */
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  }
+
+  
+.button {
+  background-color: var(--bg-b-color);
+  color: var(--bg-w-color);
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-decoration: none; /* Rimuove la sottolineatura */
+  transition: background-color 0.5s ease
+}
+
+/* Variante per i bottoni a larghezza piena */
+.button-full {
+  width: 100%;
+}
+
+/* Effetto hover e active */
+.button:hover {
+  background-color: var(--second-color);
+}
+
+.button:active {
+  background-color: var(--color-active);
+}
