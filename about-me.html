@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ilaria Da Campo - About me</title>
+    <title>Ilaria Da Campo - Homepage</title>
 
   
 
@@ -16,15 +16,15 @@
       <meta property="og:type" content="website"/>
       <meta property="og:title" content="Ilaria Da Campo – portfolio"/>
       <meta property="og:description" content="Ciao sono Ilaria, e questo è il mio portfolio di Graphic & UX/UI Design"/>
-      <meta property="og:url" content="https://ilariadacampo.github.io/Portfolio/"/>
+      <meta property="og:url" content=" https://ilariadacampo.github.io/Portfolio/"/>
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
 
     <!-- Collegamento fogli di stile -->
-    <link rel="stylesheet" href="assets/css/general.css">
     <link rel="stylesheet" href="assets/css/about-me.css">
+    <link rel="stylesheet" href="assets/css/general.css">
     <link rel="stylesheet" href="assets/css/mediaqueries.css">
 
      <!-- Favicon -->
@@ -43,8 +43,8 @@
       
           <!-- Bottone hamburger (mostrato solo su mobile) -->
           <button class="custom-navbar-toggler d-lg-none" type="button" aria-label="Toggle navigation">
-            <i class="bi bi-list"></i> <!-- Icona hamburger -->
-            <i class="bi bi-x d-none"></i> <!-- Icona "X" nascosta -->
+            <i class="bi bi-list"></i>
+            <i class="bi bi-x d-none"></i> 
           </button>
       
           <!-- Menu di navigazione -->
@@ -57,27 +57,35 @@
           </div>
         </div>
       </nav>
-      
 
-      <section class="header-about">
-        <div class="header-content-about">
-          <h1 class="heading-h1">CONOSCIAMOCI MEGLIO!</h1>
-          <h3 class="h3">Mi presento, sono <b>Ilaria Da Campo</b> e sono una creativa siciliana.</h3>
-          <a href="assets/pdf/Ilaria_DaCampo_CV.pdf" class="button left-aligned-about" target="_blank">Scarica il mio CV</a>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1 class="hero-title">CONOSCIAMOCI!</h1>
+          <h3 class="hero-subtitle">Mi chiamo <strong>Ilaria Da Campo</strong> e sono una creativa siciliana.</h3>
+          <a href="assets/media/CV_IlariaDaCampo.pdf" class="hero-button">Scarica il mio CV</a>
         </div>
-    </section>
+      </section>
 
-  <!-- Sezione Informazioni -->
-  <section class="information-about-me">
-    <div class="information-grid">
-        <div class="image-container-about-me">
-            <img src="assets/media/fotoprofilo.jpg" alt="Foto di Ilaria Da Campo, graphic e UX/UI designer">
+      <!-- Sezione About Me -->
+<section class="about-section">
+    <div class="about-container">
+        <!-- Immagine a sinistra -->
+        <div class="about-image">
+            <img src="assets/media/fotoprofilo.jpg" alt="Ilaria Da Campo">
         </div>
-        <div class="text-container">
-            <p class="body-large">
-                Dopo una prima formazione in <span class="highlight">Design della comunicazione visiva </span> presso l'ABACT, il mio interesse per l'oggetto libro e i meccanismi che ne regolano la progettazione mi ha portato a specializzarmi in <span class="highlight">Design per l'editoria</span>. Questo interesse si riflette nel mio progetto di tesi, suddiviso in due volumi: <br><br><span class="highlight">«Iperdesign. Progettare oltre le soglie del libro»</span> e <span class="highlight">«Trenta piccole storie di libri fuori dall'ordinario»</span>.<br>
-                <br>È durante il mio percorso accademico, tra i vari esami, che mi sono avvicinata al mondo della <span class="highlight">UX/UI Design</span>.<br><br>
-                Vedere il design come un punto di incontro tra psicologia, marketing e nuove tecnologie mi ha spinta a continuare il mio percorso con <a class="custom-link" target="_blank" href="https://www.start2impact.it/">Start2impact,</a> con l'obiettivo di creare esperienze digitali che non siano solo intuitive e funzionali, ma anche accessibili e sostenibili.<br> <br>
+
+        <!-- Testo a destra -->
+        <div class="about-text">
+            <p>
+                Dopo una prima formazione in <span class="highlight">Design della comunicazione visiva</span> presso l'ABACT, il mio interesse per l'oggetto libro e i meccanismi che ne regolano la progettazione mi ha portato a specializzarmi in <span class="highlight">Design per l'editoria</span>. 
+                Questo interesse si riflette nel mio progetto di tesi, suddiviso in due volumi: <br><br>
+                <span class="highlight">«Iperdesign. Progettare oltre le soglie del libro»</span> e <span class="highlight">«Trenta piccole storie di libri fuori dall'ordinario»</span>.<br><br>
+                
+                È durante il mio percorso accademico, tra i vari esami, che mi sono avvicinata al mondo della <span class="highlight">UX/UI Design</span>.<br><br>
+
+                Vedere il design come un punto di incontro tra psicologia, marketing e nuove tecnologie mi ha spinta a continuare il mio percorso con 
+                <a class="custom-link" target="_blank" href="https://www.start2impact.it/">Start2impact</a>, con l'obiettivo di creare esperienze digitali che non siano solo intuitive e funzionali, ma anche accessibili e sostenibili.<br><br>
+
                 Nel tempo libero continuo a coltivare segretamente il mio interesse per l'editoria, la carta e le sue nobilitazioni. ✨
             </p>
         </div>
@@ -85,53 +93,52 @@
 </section>
 
 <section class="education-and-skills">
-  <!-- Colonna Formazione -->
-  <div class="education-column">
-      <h2 class="large">Formazione</h2>
-      
-      <h3 class="body-1">Master in UX/UI Design</h3>
-      <p class="body-2">Start2impact – Data prevista maggio 2025</p>
-      <p class="body">Durante il corso ho sviluppato competenze in diversi ambiti della progettazione, dalla fase di discovery e accessibilità al wireframing, HTML & CSS, UI design, prototyping e user testing.</p>
-
-      <h3 class="body-1">Diploma Accademico di Secondo Livello – Design per l’editoria</h3>
-      <p class="body-2">Accademia di Belle Arti, Catania (CT) – Giugno 2024</p>
-      <p class="body">Durante il corso ho acquisito competenze nella progettazione di materiali editoriali, creazione di identità visive per progetti e eventi culturali, e nello sviluppo di strategie editoriali e promozionali per case editrici.</p>
-
-      <h3 class="body-1">Diploma Accademico di Primo Livello – Design della comunicazione visiva</h3>
-      <p class="body-2">Accademia di Belle Arti, Catania (CT) – Marzo 2021</p>
-  </div>
-
-  <!-- Colonna Skills -->
-  <div class="skills-column">
-      <!-- Soft Skills -->
-      <div class="soft-skills">
-          <h2 class="large">Soft Skills</h2>
-          <ul class="skills-list">
-              <li>Teamwork</li>
-              <li>Organizzazione e flessibilità</li>
-              <li>Versatilità</li>
-          </ul>
-      </div>
-
-      <!-- Hard Skills -->
-      <div class="hard-skills">
-          <h2 class="large">Hard Skills</h2>
-          <ul class="skills-list">
-              <li><b>Progettazione Grafica:</b> sviluppo di identità visive e branding;</li>
-              <li><b>Impaginazione:</b> creazione di layout per progetti editoriali e digitali;</li>
-              <li><b>User Experience Design;</b></li>
-              <li><b> User Interface Design;</b></li>
-              <li><b>Wireframing;</b></li>
-              <li><b>Prototipazione;</b></li>
-              <li><b>User Testing;</b></li>
-              <li><b>HTML & CSS</b> (base).</li>   
-          </ul>
-      </div>
-  </div>
-</section>
-
-
-<!-- Sezione Tool Utilizzati -->
+    <!-- Colonna Formazione -->
+    <div class="education-column">
+        <h2 class="large">Formazione</h2>
+        
+        <h3 class="body-1">Master in UX/UI Design</h3>
+        <p class="body-2">Start2impact – Data prevista maggio 2025</p>
+        <p class="body">Durante il corso ho sviluppato competenze in diversi ambiti della progettazione, dalla fase di discovery e accessibilità al wireframing, HTML & CSS, UI design, prototyping e user testing.</p>
+  
+        <h3 class="body-1">Diploma Accademico di Secondo Livello – Design per l’editoria</h3>
+        <p class="body-2">Accademia di Belle Arti, Catania (CT) – Giugno 2024</p>
+        <p class="body">Durante il corso ho acquisito competenze nella progettazione di materiali editoriali, creazione di identità visive per progetti e eventi culturali, e nello sviluppo di strategie editoriali e promozionali per case editrici.</p>
+  
+        <h3 class="body-1">Diploma Accademico di Primo Livello – Design della comunicazione visiva</h3>
+        <p class="body-2">Accademia di Belle Arti, Catania (CT) – Marzo 2021</p>
+    </div>
+  
+    <!-- Colonna Skills -->
+    <div class="skills-column">
+        <!-- Soft Skills -->
+        <div class="soft-skills">
+            <h2 class="large">Soft Skills</h2>
+            <ul class="skills-list">
+                <li>Teamwork</li>
+                <li>Organizzazione e flessibilità</li>
+                <li>Versatilità</li>
+            </ul>
+        </div>
+  
+        <!-- Hard Skills -->
+        <div class="hard-skills">
+            <h2 class="large">Hard Skills</h2>
+            <ul class="skills-list">
+                <li><b>Progettazione Grafica:</b> sviluppo di identità visive e branding;</li>
+                <li><b>Impaginazione:</b> creazione di layout per progetti editoriali e digitali;</li>
+                <li><b>User Experience Design;</b></li>
+                <li><b> User Interface Design;</b></li>
+                <li><b>Wireframing;</b></li>
+                <li><b>Prototipazione;</b></li>
+                <li><b>User Testing;</b></li>
+                <li><b>HTML & CSS</b> (base).</li>   
+            </ul>
+        </div>
+    </div>
+  </section>
+  
+  <!-- Sezione Tool Utilizzati -->
 <section class="tool-section">
     <h2 class="large">Tool</h2>
   <div class="tool-icons">
@@ -146,46 +153,46 @@
      
   </div>
 </section>
-
+  
 <section class="contact">
-  <form action="https://formsubmit.co/ilariadacampo73@gmail.com" method="POST" class="contact-form">
-    <input type="hidden" name="_captcha" value="false">
-      <h2>Entriamo in contatto!</h2>
-      <p class="sub-title"> Se sei interessato a collaborare, hai qualche domanda o vuoi solo scambiare delle idee, scrivimi.</p>
-          <div class="form-group">
-              <label for="name">Nome</label>
-              <input type="text" id="name" name="name" required>
-          </div>
+    <form action="https://formsubmit.co/ilariadacampo73@gmail.com" method="POST" class="contact-form">
+      <input type="hidden" name="_captcha" value="false">
+        <h2>Entriamo in contatto!</h2>
+        <p class="sub-title"> Se sei interessato a collaborare, hai qualche domanda o vuoi solo scambiare delle idee, scrivimi.</p>
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+  
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+  
+            <div class="form-group">
+                <label for="message">Messaggio</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+  
+            <button type="submit" class="button button-full" aria-label="Invia il messaggio">Invia</button>
+    </form>
+  </section>
 
-          <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required>
-          </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Copyright &copy; 2025 Ilaria Da Campo</p>
+    </div>
+    <div class="footer-icons">
+      <a href="https://www.linkedin.com/in/ilariadacampo/" target="_blank" aria-label="Vai al profilo Linkedin di Ilaria Da Campo">
+        <i class="bi bi-linkedin"></i> <!--Icona di Linkedin-->
+      </a>        
+      <a href="https://www.behance.net/ilariadacampo" target="_blank" aria-label="Vai al profilo Behance di Ilaria Da Campo">
+        <i class="bi bi-behance"></i> <!--Icona di Behance-->
+      </a>
+    </div>
+  </footer>
 
-          <div class="form-group">
-              <label for="message">Messaggio</label>
-              <textarea id="message" name="message" rows="4" required></textarea>
-          </div>
-
-          <button type="submit" class="button button-full" aria-label="Invia il messaggio">Invia</button>
-  </form>
-</section>
-
-
-       <!-- Footer -->
-       <footer class="footer">
-        <div class="footer-text">
-          <p>Copyright &copy; 2025 Ilaria Da Campo</p>
-        </div>
-        <div class="footer-icons">
-          <a href="https://www.linkedin.com/in/ilariadacampo/" target="_blank" aria-label="Linkedin">
-            <i class="bi bi-linkedin"></i> <!--Icona di Linkedin-->
-          </a>        
-          <a href="https://www.behance.net/ilariadacampo" target="_blank" aria-label="Behance">
-            <i class="bi bi-behance"></i> <!--Icona di Behance-->
-          </a>
-        </div>
-      </footer>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
       <script src="assets/javascript/script.js"></script>

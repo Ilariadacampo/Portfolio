@@ -75,23 +75,9 @@
     object-fit: cover;
 }
 
-
-/*Sezione About-me*/
-.header-content-about {
-    max-width: 90%;
-    margin-left: 2rem;
-  }
-  .heading-h1 {
-    font-size: 4rem;
-  }
-  .h3 {
-    font-size: 1.8rem;
-  }
 }
 
   
-
-/* Media Query per dispositivi mobili (max-width: 767px) */
 /* Media Query per dispositivi mobili (max-width: 767px) */
 @media (max-width: 767px) {
     .navbar-nav {
@@ -107,6 +93,28 @@
         width: 100%;
         margin-left: 3rem;
     }
+
+    /*Sezione about*/
+
+    .hero-section {
+        height: auto;
+        padding: 4rem 1.5rem;
+        text-align: left;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-button {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+
   
     .header {
         height: 400px;
@@ -210,32 +218,43 @@
     .footer-icons a {
         padding-left: 1rem;
     }
-  
+
+    .about-section {
+        padding: 3rem 1rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .about-image {
+        max-width: 80%;
+    }
+
+    .about-text {
+        max-width: 100%;
+        font-size: 1rem;
+    }
 
 
+        .education-and-skills {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .education-column, .skills-column {
+            width: 100%;
+            text-align: center;
+        }
+ .tool-icons {
+    gap: 1rem; /* Spazio tra le icone sui dispositivi piccoli */
+    justify-content: center; /* Allinea le icone a sinistra */
+    flex-wrap: wrap; /* Le icone vanno a capo su schermi piccoli */
+}
 
-/*Mediaqueries About-me */
-.header-about {
-    height: auto;
-    padding: 4rem 2rem;
-    text-align: center;
-  }
-
-  .header-content-about {
-    margin-left: 0;
-    max-width: 100%;
-  }
-
-  .heading-h1 {
-    font-size: 3rem;
-  }
-
-  .h3 {
-    font-size: 1.5rem;
-  }
-
-  .button.left-aligned-about {
-    font-size: 1rem;
-    padding: 0.6rem 1.5rem;
-  }
+.tool-icon {
+    width: 40px; /* Riduce la larghezza delle icone per schermi piccoli */
+    height: 40px; /* Riduce l'altezza delle icone per schermi piccoli */
+}
 }
