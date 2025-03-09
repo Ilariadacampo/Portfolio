@@ -22,14 +22,14 @@ Segui questi passaggi per eseguire il progetto localmente:
    
 Apri il file index.html nel browser per visualizzare il sito.
 
-   --- 
+--- 
 ## Tecnologie utilizzate
 - Visual Studio Code come editor per il codice. 
 - HTML per realizzare la struttura della pagina.
 - CSS per definire lo stile del sito.
 
-  ---
-  ## Licenza
+---
+## Licenza
 
 Questo progetto è distribuito sotto la licenza **MIT**. Puoi consultare il file [LICENSE](LICENSE) per maggiori dettagli.
 
