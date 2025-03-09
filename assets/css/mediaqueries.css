@@ -140,6 +140,9 @@
 /*/////// Media Query per dispositivi mobili (max-width: 767px) ////////*/
 
 @media (max-width: 767px) {
+
+    /*/////// NAVBAR ///////*/
+
     .navbar-nav {
         text-align: left;
         margin-top: 20px;
@@ -155,33 +158,10 @@
     }
 
 
-
-    /*/////// PAGINA ABOUT-ME //////*/
-
-    .hero-section {
-        height: 100%;
-        padding: 4rem 1.5rem;
-        text-align: left;
-    }
-
-    .hero-title {
-        font-size: 3rem;
-    }
-
-    .hero-subtitle {
-        font-size: 1.2rem;
-        margin-bottom: 2rem;
-    }
-
-    .hero-button {
-        font-size: 1rem;
-        padding: 0.5rem 1rem;
-    }
-
     /*/////// HOMEPAGE //////*/
 
     .header {
-        height: 500px;
+        height: 400px;
         background-size: cover;
         background-position: center;
     }
@@ -192,7 +172,7 @@
     }
   
     .header h1 {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
   
     .heading-h2 {
@@ -201,9 +181,16 @@
   
     .header .h3-slim {
         font-size: 1.2rem;
+        margin-bottom: 2rem;
     }
-  
-    .projects {
+    .scroll-link { 
+        margin-top: 0; 
+        font-size: 1.2rem;
+      }
+
+
+
+    .projects { /*///// SEZIONE PROGETTI //////*/
         margin-bottom: 4rem;
     }
   
@@ -230,12 +217,9 @@
         font-size: 1rem;
         padding: 0.8rem 1.5rem;
     }
+
   
-    .button-full {
-        width: 100%;
-        padding: 1rem 2rem;
-    }
-  
+
     .contact h2 {
         font-size: 2rem;
         margin-top: 3rem; /* Più spazio sopra */
@@ -252,6 +236,12 @@
         padding: 10px;
         margin-bottom: 4rem; /* Più spazio sotto */
     }
+
+    .button-full {
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+  
   
     .portfolio-container {
         grid-template-columns: 1fr; /* Una colonna */
@@ -278,18 +268,41 @@
         text-align: center;
         padding: 1.5rem 5%;
     }
-  
-    .footer-icons a {
-        padding-left: 1rem;
+
+    .footer-icons {
+        display: flex; /* Assicurati che sia flessibile */
+        justify-content: center;
+        gap: 1rem; /* Aggiunge spazio tra le icone */
     }
 
 
+   /*/////// PAGINA ABOUT-ME //////*/
 
-    /*/////// ABOUT SECTION ///////*/
+   .hero-section {
+    height: 100%;
+    padding: 4rem 1.5rem;
+    text-align: left;
+}
 
-    .about-section {
+.hero-title {
+    font-size: 3rem;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+    .about-section {      /*/////// ABOUT SECTION ///////*/
     margin: 2rem;
     }
+
+
     .about-container {
     flex-direction: column;
      text-align: left;
@@ -321,13 +334,17 @@
         text-align: left;
         }
 
+.tool-section {
+            margin: 4 3rem;
+            gap: 3rem;
+        }
 
-     .tool-icons {
-        justify-content: center; /* Centra le icone se lo spazio è molto ridotto */
+.tool-icons {
+        justify-content: center; 
         }
     
      .tool-icon {
-        width: 32px; /* Riduce ulteriormente la dimensione delle icone su schermi molto piccoli */
-        height: 32px; /* Riduce l'altezza delle icone su schermi molto piccoli */
+        width: 48px; /* Riduce ulteriormente la dimensione delle icone su schermi molto piccoli */
+        height: 48px; /* Riduce l'altezza delle icone su schermi molto piccoli */
         }
     }

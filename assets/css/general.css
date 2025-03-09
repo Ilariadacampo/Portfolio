@@ -186,11 +186,15 @@ body {
     font-size: 1rem;
     color: var(--bg-w-color);
 }
+.footer-icons {
+  display: flex; /* Assicurati che sia flessibile */
+  justify-content: center;
+  gap: 2rem; /* Aggiunge spazio tra le icone */
+}
 
 .footer-icons a {
     font-size: 1.5rem;
     color: var(--bg-w-color);
-    padding-left: 2rem;
     text-decoration: none; /* Rimuove qualsiasi sottolineatura */
   }
 

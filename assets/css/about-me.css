@@ -147,15 +147,14 @@
 }
 
 .tool-section {
-    margin: 4rem 0%;
     text-align: center; /* Centra il contenuto della sezione */
 }
 
 .tool-icons {
     display: flex; /* Imposta il contenitore come un flexbox */
     justify-content: space-evenly; /* Distribuisce lo spazio tra le icone in modo uniforme */
-    flex-wrap: wrap; /* Permette alle icone di andare su più righe se necessario */
-    gap: 1rem; /* Aggiunge spazio tra le icone */
+    flex-wrap: wrap; 
+    gap: 1.5rem; /* Aggiunge spazio tra le icone */
     margin-top: 2.5rem; /* Distanza dalla sezione superiore */
 }
 
