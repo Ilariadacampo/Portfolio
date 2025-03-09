@@ -57,8 +57,8 @@
     gap: 3rem;
 }
 
-/* Stile dell'immagine */
-.about-image {
+
+.about-image { /* Stile dell'immagine */
     flex: 1;
     max-width: 40%;
 }
@@ -69,8 +69,8 @@
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Stile del testo */
-.about-text {
+
+.about-text { /* Stile del testo */
     flex: 1;
     max-width: 50%;
     font-size: 1.2rem;
@@ -82,8 +82,8 @@
     font-weight: bold;
 }
 
-/* Stile del link */
-.custom-link {
+
+.custom-link { /* Stile del link */
     color: var(--color-accent);
     text-decoration: none;
 }
@@ -101,12 +101,10 @@
 
 }
 
-/* Colonne */
-.education-column, .skills-column {
+.education-column, .skills-column { /* Colonne */
     width: 48%;
 }
 
-/* Titoli e testi */
 .large {
     margin-bottom: 1.5rem;
     font-size: 3rem;

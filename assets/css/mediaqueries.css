@@ -137,45 +137,51 @@
 }
 
   
-/* Media Query per dispositivi mobili (max-width: 767px) */
+/*/////// Media Query per dispositivi mobili (max-width: 767px) ////////*/
+
 @media (max-width: 767px) {
     .navbar-nav {
         text-align: left;
         margin-top: 20px;
-        display: block; /* Assicurati che il menu occupi tutta la larghezza */
+        display: block;
         width: 100%;
-        padding-left: 0;
-        padding-right: 0;
     }
   
     .nav-item {
         width: 100%;
     }
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
 
-    /*Sezione about*/
+
+
+    /*/////// PAGINA ABOUT-ME //////*/
 
     .hero-section {
-        height: auto;
+        height: 100%;
         padding: 4rem 1.5rem;
         text-align: left;
     }
 
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .hero-subtitle {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
     }
 
     .hero-button {
         font-size: 1rem;
-        padding: 0.6rem 1.2rem;
+        padding: 0.5rem 1rem;
     }
 
-  
+    /*/////// HOMEPAGE //////*/
+
     .header {
-        height: 400px;
+        height: 500px;
         background-size: cover;
         background-position: center;
     }
@@ -186,7 +192,7 @@
     }
   
     .header h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
   
     .heading-h2 {
@@ -277,44 +283,51 @@
         padding-left: 1rem;
     }
 
-    .about-section {
-        padding: 3rem 1rem;
-    }
 
+
+    /*/////// ABOUT SECTION ///////*/
+
+    .about-section {
+    margin: 2rem;
+    }
     .about-container {
-        flex-direction: column;
-        text-align: left;
+    flex-direction: column;
+     text-align: left;
     }
 
     .about-image {
-        max-width: 80%;
+    max-width: 80%;
     }
 
     .about-text {
-        max-width: 100%;
-        font-size: 1rem;
-    }
-    .large {
-        font-size: 2rem;
+     max-width: 100%;
+    font-size: 1rem;
     }
 
-        .education-and-skills {
-            padding: 2rem 10%;
-            margin-top: 2rem;
-            flex-direction: column;
-            align-items: center;
+    .large {
+    font-size: 2rem;
+    }
+
+    .education-and-skills {
+    padding: 2rem 10%;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+
+    }
+    
+     .education-column, .skills-column {
+        width: 100%;
+        text-align: left;
+        }
+
+
+     .tool-icons {
+        justify-content: center; /* Centra le icone se lo spazio è molto ridotto */
         }
     
-        .education-column, .skills-column {
-            width: 100%;
-            text-align: left;
-        }
-        .tool-icons {
-            justify-content: center; /* Centra le icone se lo spazio è molto ridotto */
-        }
-    
-        .tool-icon {
-            width: 32px; /* Riduce ulteriormente la dimensione delle icone su schermi molto piccoli */
-            height: 32px; /* Riduce l'altezza delle icone su schermi molto piccoli */
+     .tool-icon {
+        width: 32px; /* Riduce ulteriormente la dimensione delle icone su schermi molto piccoli */
+        height: 32px; /* Riduce l'altezza delle icone su schermi molto piccoli */
         }
     }

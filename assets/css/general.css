@@ -29,7 +29,7 @@ body {
   color: var(--bg-b-color);
 }
 
-/* Navigation Bar */
+/*/////// NAV BAR //////*/
 
 .navbar-container {
     width: 100%;
@@ -61,7 +61,7 @@ body {
 
 .navbar-nav .nav-link {
     font-size: 1.2rem;
-    color: var(--text-color);
+    color: var(--bg-w-color);
     transition: color 0.3s ease-in-out;
 }
 
@@ -78,8 +78,7 @@ body {
   background: none;
   border: none;
   font-size: 2rem;
-  cursor: pointer;
-  color: white; /* Cambia colore se necessario */
+  color: var(--bg-w-color); /* Cambia colore se necessario */
 }
 
 .custom-navbar-toggler i {
