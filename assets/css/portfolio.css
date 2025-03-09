@@ -2,23 +2,21 @@
 
 .portfolio {
     text-align: center;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin: 4rem 0; 
 }
 
-/* Contenitore dei progetti */
-.portfolio-container {
+
+.portfolio-container { /* Contenitore dei progetti */
     margin: 4rem auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 2rem;;
     gap: 3rem;
+    padding: 0 2rem;
     justify-items: center;
     width: 60%;
 }
 
-/* Box dei singoli progetti */
-.portfolio-box {
+.portfolio-box { /* Box dei singoli progetti */
     position: relative;
     border-radius: 1rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -32,23 +30,21 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Immagine del progetto */
-.portfolio-box img {
+
+.portfolio-box img { /* Immagine del progetto */
     width: 100%;
-    object-fit: cover; /* Evita deformazioni */
+    object-fit: cover; 
     transition: transform 0.5s ease;
 }
 
-/* Hover sull'immagine: ingrandisce */
 .portfolio-box:hover img {
     transform: scale(1.1);
 }
 
-/* Sovrapposizione del progetto */
-.portfolio-layer {
+
+.portfolio-layer { /* Sovrapposizione del progetto */
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
@@ -62,13 +58,13 @@
     transition: opacity 0.5s ease-in-out, background 0.5s ease-in-out;
 }
 
-/* Hover: mostra la sovrapposizione */
+
 .portfolio-box:hover .portfolio-layer {
     opacity: 1;
     background: rgba(0, 0, 0, 0.6);
 }
 
-/* Titolo del progetto nella sovrapposizione */
+
 .portfolio-layer h4 {
     font-size: 1.5rem;
     color: var(--bg-w-color);
@@ -77,7 +73,7 @@
     transition: all 0.5s ease-in-out;
 }
 
-/* Hover: titolo del progetto visibile */
+
 .portfolio-box:hover .portfolio-layer h4 {
     opacity: 1;
     transform: translateY(0);

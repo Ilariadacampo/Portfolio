@@ -71,7 +71,7 @@
 .about-image {
     width: 35%; 
     aspect-ratio: 1; 
-    position: relative; /
+    position: relative; 
 }
 
 .about-image img {
@@ -113,7 +113,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 10%;
-    margin: 4rem;
+    margin: 4rem 0;
     gap: 8rem;
 
 }
@@ -164,15 +164,15 @@
 /* /////// SEZIONE TOOLS //////*/
 
 .tool-section { 
+    padding: 0 10%;
     text-align: center; 
-    margin-bottom: 4rem;
 }
 
 .tool-icons {
     display: flex; 
     justify-content: space-evenly; 
     flex-wrap: wrap; 
-    gap: 1.5rem; 
+    gap: 2rem; 
 }
 
 .tool-icon {

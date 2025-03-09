@@ -4,100 +4,42 @@
 
     /*/////// NAVBAR ///////*/
 
-    .navbar-nav .nav-link {
-        font-size: 1.1rem;
-        color: var(--bg-w-color);
-        transition: color 0.3s ease-in-out;
-    }
+.navbar-nav .nav-link {
+     font-size: 1.1rem;
+    color: var(--bg-w-color);
+    transition: color 0.3s ease-in-out;
+}
 
     /*///// HOMEPAGE //////*/
 
-  .header {
-      height: 500px;
-      background-size: cover;
-      background-position: center;
-  }
+.header {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
 
-  .header h1 {
-      font-size: 6rem;
-  }
+.header h1 {
+    font-size: 6rem;
+}
 
-  .header .h3-slim {
+.header .h3-slim {
     font-weight: 600;
     font-size: 2rem; 
     margin-top: 1rem;
     margin-bottom: 4rem;
-  }
+}
 
 
-  .heading-h2 {  /*Titolo H2 */
+.heading-h2 {  /*Titolo H2 */
     font-size: 2.5rem;
 }
 
-  .hero-section {
-    padding-left: 4rem; /* Riduci il padding sinistro */
-    padding-right: 4rem; /* Aggiungi padding a destra per bilanciare */
-    text-align: left;
-}
-
-.hero-title {
-    font-size: 4.5rem; /* Adatta il font-size per schermi intermedi */
-}
-
-.hero-subtitle {
-    font-size: 1.5rem;
-}
-
-.hero-button {
-    font-size: 1.1rem;
-    padding: 0.8rem 1.5rem; /* Regola la dimensione del bottone */
-}
-
-/* Ottimizzazione per la sezione 'About' */
-.about-section {
-    padding: 3rem 5%;
-    text-align: left;
-}
-
-.about-container {
-    flex-direction: row; /* Torna alla disposizione orizzontale delle immagini e del testo */
-}
-
-.about-image {
-    max-width: 45%; /* Ottimizza la larghezza dell'immagine */
-}
-
-.about-text {
-    max-width: 50%;
-}
-
-/* Sezione education and skills */
-.education-and-skills {
-    gap: 4rem; /* Aggiungi più spazio tra le colonne */
-}
-
-.education-column, .skills-column {
-    width: 48%; /* Ottimizza le larghezze delle colonne */
-    text-align: left; /* Allinea il testo a sinistra */
-}
-
-/* Ottimizzazione per tool-icons */
-.tool-icons {
-    justify-content: space-between; /* Dispone le icone in modo equidistante */
-    margin-top: 3rem;
-}
-
-.tool-icon {
-    width: 50px; /* Larghezza ottimizzata per icone di dimensione media */
-    height: 50px;
+.projects-container {
+    grid-template-columns: repeat(2, 1fr);
 }
 
 
-  .projects-container {
-      grid-template-columns: repeat(2, 1fr);
-  }
-
-  .contact-form {
+.contact-form {     /*///// CONTACT FORM //////*/
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -106,19 +48,20 @@
     border-radius: 10px;
 }
 
+
 .contact h2 {
     font-size: 2rem;
-    margin-top: 2rem; /* Aggiunto spazio sopra */
+    margin-top: 2rem; 
 }
 
 .sub-title {
     font-size: 1rem;
-    margin-bottom: 2.5rem; /* Aggiunto più spazio sotto */
+    margin-bottom: 2.5rem; /
 }
 
 .contact-form {
     padding: 15px;
-    margin-bottom: 3rem; /* Distanza extra dal fondo */
+    margin-bottom: 3rem; 
 }
 
 .button {
@@ -133,11 +76,10 @@
 
 /*/////// PAGINA PORTFOLIO //////*/
 
-  .portfolio-container {
+.portfolio-container {
     grid-template-columns: repeat(2, 1fr); /* Due colonne */
     width: 80%;
     gap: 2rem;
-
 }
 
 .portfolio-box {
@@ -146,11 +88,61 @@
 
 .portfolio-box img {
     width: 100%;
-    height: auto; /* Mantiene le proporzioni */
+    height: auto; 
     object-fit: cover;
 }
 
+
+/*///// PAGINA ABOUT ME //////*/
+
+.hero-section {
+    padding: 0 4rem;
+    text-align: left;
 }
+
+.hero-title {
+    font-size: 4.5rem; 
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+}
+
+.hero-button {
+    font-size: 1.1rem;
+    padding: 0.8rem 1.5rem; 
+}
+
+.about-text {
+    font-size: 1.1rem; 
+    max-width: 900px; 
+    width: 100%; 
+
+}
+
+.education-and-skills { /*////// SEZIONE EDUCATION AND SKILLS //////*/
+    gap: 4rem; 
+}
+
+.education-column, .skills-column {
+    width: 48%; 
+    text-align: left; /
+}
+
+
+.tool-icons { /*////// SEZIONE TOOLS //////*/
+    justify-content: space-between; 
+    margin-top: 3rem;
+}
+
+.tool-icon {
+    width: 50px; 
+    height: 50px;
+}
+
+}
+
+
 
   
 /*/////// Media Query per dispositivi mobili (max-width: 767px) ////////*/
@@ -258,6 +250,7 @@
         padding: 1rem 2rem;
     }
   
+    /*/////// PAGINA PORTFOLIO //////*/
   
     .portfolio-container {
         grid-template-columns: 1fr; /* Una colonna */
@@ -279,6 +272,8 @@
         font-size: 1.2rem;
     }
   
+    /*////// FOOTER //////*/
+    
     .footer {
         flex-direction: column;
         text-align: center;
@@ -318,41 +313,45 @@
     margin: 2rem;
     }
 
-
     .about-container {
-    flex-direction: column;
-     text-align: left;
+        flex-direction: column; /* Cambia la direzione a colonna */
+        align-items: center;
+        gap: 1rem; /* Distanza tra immagine e testo */
     }
 
     .about-image {
-    max-width: 80%;
+        width: 60%; /* Larghezza dell'immagine più grande */
+        margin-bottom: 1rem; /* Spazio sotto l'immagine */
     }
 
     .about-text {
-     max-width: 100%;
-    font-size: 1rem;
+        font-size: 1rem; /* Ridurre la dimensione del testo per una lettura migliore */
+        text-align: left; /* Centra il testo */
+    }
+
+
+ 
+    .education-and-skills {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+
+    }
+    
+    .education-column, .skills-column {
+    width: 100%;
+    text-align: left;
     }
 
     .large {
     font-size: 2rem;
     }
 
-    .education-and-skills {
-    padding: 2rem 10%;
-    margin-top: 2rem;
-    flex-direction: column;
-    align-items: center;
-
-    }
-    
-     .education-column, .skills-column {
-        width: 100%;
-        text-align: left;
-        }
+            
 
 .tool-section {
-            margin: 4 3rem;
             gap: 3rem;
+            text-align: left;
         }
 
 .tool-icons {

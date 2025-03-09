@@ -45,14 +45,14 @@ body {
   user-select: none;
   font-size: 1.6rem;
   font-weight: 600;
-  color: var(--bg-w-color) !important; /* Forza il colore */
+  color: var(--bg-w-color) !important; 
 }
 
 
 .navbar-nav {
     display: flex;                
     justify-content: space-between;
-    align-items: center;           /* Centra verticalmente gli elementi */
+    align-items: center;           
     gap: 3rem;
 }
 
@@ -63,20 +63,20 @@ body {
     transition: color 0.3s ease-in-out;
 }
 
-/* Aggiungi l'effetto hover e active */
+
 .navbar-nav .nav-link:hover {
-    color: var(--second-color); /* Colore al passaggio del mouse */
+    color: var(--second-color); 
 }
 
 .navbar-nav .nav-link.active {
-  color: var(--color-active); /* Colore al passaggio del mouse */
+  color: var(--color-active); 
 }
 
 .custom-navbar-toggler {
   background: none;
   border: none;
   font-size: 2rem;
-  color: var(--bg-w-color); /* Cambia colore se necessario */
+  color: var(--bg-w-color); 
 }
 
 .custom-navbar-toggler i {
@@ -84,11 +84,11 @@ body {
 }
 
 .custom-navbar-toggler .bi-x {
-  font-size: 2rem; /* Leggermente più grande per coerenza */
+  font-size: 2rem; 
 }
 
 
-/* HEADER */
+/*////// TITOLI H2 HOMEPAGE E PORTFOLIO //////*/
 
 
  .heading-h2 { 
@@ -99,12 +99,13 @@ body {
 
 }
 
-/* Sezione contatti */
+/*////// SEZIONE CONTATTI //////*/
+
 .contact {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Occupa l'intera altezza della finestra */
+    min-height: 100vh; 
     background-image: url('../media/web_2.svg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -113,18 +114,15 @@ body {
   }
   
   .contact h2 {
-    font-size: 3rem; /* Dimensione del font */
-    font-weight: 600; /* Spessore del font */
-    color: var(--text-color); /* Colore del testo */
+    font-size: 3rem; 
+    font-weight: 600; 
   }
   
   .sub-title {
-    font-size: 1.2rem; /* Dimensione del font */
-    color: var(--text-color); /* Colore del testo */
-    margin-top: 1rem; /* Distanza tra il titolo e il testo */
-    margin-bottom: 2rem;
-    font-weight: 400; /* Peso del font */
-    text-align: center; /* Centra il testo */
+    font-size: 1.2rem; 
+    margin: 1rem 0 2rem;
+    font-weight: 400; 
+    text-align: center; 
   }
   
   .contact-form {
@@ -132,44 +130,42 @@ body {
     flex-direction: column;
     width: 100%;
     max-width: 600px;
-    padding: 20px;
+    padding: 2rem;
     border-radius: 10px;
   }
   
-  /* Contenitore degli input e del bottone */
-  .input-container {
+
+  .input-container { /* Contenitore degli input e del bottone */
     display: flex;
     flex-direction: column;
-    width: 100%; /* Assicura che il contenitore occupi tutta la larghezza */
+    width: 100%; /
   }
   
   .contact-form label {
-    display: block; /* Rende l'etichetta un blocco e la sposta sopra l'input */
+    display: block; 
     font-size: 1rem; /* Dimensione del font dell'etichetta */
-    margin-bottom: 5px; /* Distanza tra l'etichetta e l'input */
-    text-align: left; /* Allinea il testo a sinistra */
-    color: var(--text-color); /* Colore del testo per l'etichetta */
+    font-weight: 500;;
+    margin-bottom: 0.4rem; /* Distanza tra etichetta e campo di input */
+    text-align: left; 
   }
   
   .form-group input,
   .form-group textarea {
-    width: 100%; /* Occupa tutta la larghezza del contenitore */
+    width: 100%; 
     font-size: 1.2rem;
-    border: 1px solid #ccc;
+    border: 1px solid #9a9a9a;
     border-radius: 5px;
-    padding: 10px;
+    padding: 0.5rem;
     margin-bottom: 1.5rem;
-    box-sizing: border-box; /* Includi padding e bordi nella larghezza */
   }
   
-  /* Disabilita il ridimensionamento per la textarea */
   .form-group textarea {
-    resize: none; /* Disabilita il ridimensionamento */
+    resize: none; 
   }
   
 
 
-/* Footer */
+/*////// FOOOTER //////*/
 
 .footer { 
     width: 100%;
@@ -181,17 +177,17 @@ body {
 }
 
 .footer-text {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--bg-w-color);
 }
 .footer-icons {
-  display: flex; /* Assicurati che sia flessibile */
+  display: flex; 
   justify-content: center;
-  gap: 2rem; /* Aggiunge spazio tra le icone */
+  gap: 1.5rem; /*spazio tra le icone */
 }
 
 .footer-icons a {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: var(--bg-w-color);
     text-decoration: none; /* Rimuove qualsiasi sottolineatura */
   }
@@ -203,7 +199,10 @@ body {
     color: var(--color-active);
  }
 
- /* Stile generico per tutti i bottoni */
+
+
+
+ /*////// STILE GENERICO PER I BOTTONI //////*/
 
 .button-container {
   display: flex;
@@ -222,12 +221,10 @@ body {
   transition: background-color 0.5s ease
 }
 
-/* Variante per i bottoni a larghezza piena */
 .button-full {
   width: 100%;
 }
 
-/* Effetto hover e active */
 .button:hover {
   background-color: var(--second-color);
 }
