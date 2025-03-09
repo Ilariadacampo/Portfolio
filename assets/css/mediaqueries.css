@@ -151,145 +151,131 @@
 
     /*/////// NAVBAR ///////*/
 
-    .navbar-nav {
-        text-align: left;
-        margin-top: 20px;
-        display: block;
-        width: 100%;
-    }
+.navbar-nav {
+    text-align: left;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+}
   
-    .nav-item {
-        width: 100%;
-    }
-    .navbar-nav .nav-link {
-        font-size: 1rem;
-    }
+.nav-item {
+    width: 100%;
+}
+    
+.navbar-nav .nav-link {
+    font-size: 1rem;
+}
 
 
     /*/////// HOMEPAGE //////*/
 
-    .header {
-        height: 500px;
-        background-size: cover;
-        background-position: center;
-    }
+.header {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+ }
   
-    .header-content {
-        margin-left: 2rem;  /* Riduci il margine sinistro */
-        margin-right: 2rem; /* Aggiungi spazio a destra */
-    }
+
+.header h1 {
+     font-size: 3rem;
+}
   
-    .header h1 {
-        font-size: 3.5rem;
-    }
+.heading-h2 {
+    font-size: 2rem;
+ }
   
-    .heading-h2 {
-        font-size: 2rem;
-    }
-  
-    .header .h3-slim {
-        font-size: 1.2rem;
-        margin-bottom: 2rem;
-    }
-    .scroll-link { 
-        margin-top: 0; 
-        font-size: 1.2rem;
-      }
+.header .h3-slim {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.scroll-link { 
+    margin-top: 0; 
+    font-size: 1.2rem;
+}
 
 
 
-    .projects { /*///// SEZIONE PROGETTI //////*/
-        margin-bottom: 4rem;
+.projects { /*///// SEZIONE PROGETTI //////*/
+    margin-bottom: 4rem;
     }
   
-    .projects-container {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
+.projects-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
   
-    .projects-box {
-        max-width: 90%;
-    }
+.projects-box {
+    max-width: 90%;
+}
   
-    .projects-box img {
-        width: 100%;
-        max-height: 250px;
-        object-fit: cover;
-    }
+.projects-box img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+}
   
-    .projects-layer h4 {
-        font-size: 1.2rem;
-    }
+.projects-layer h4 {
+    font-size: 1.2rem;
+}
   
-    .button {
-        font-size: 1rem;
-        padding: 0.8rem 1.5rem;
-    }
+.button {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+}
 
   
 
-    .contact h2 {
-        font-size: 2rem;
-        margin-top: 3rem; /* Più spazio sopra */
-        text-wrap: nowrap;
-    }
+.contact h2 {  /*///// CONTACT FORM //////*/
+    font-size: 2rem;
+    margin-top: 3rem; 
+    text-wrap: nowrap;
+ }
   
-    .sub-title {
-        font-size: 1rem;
-        margin-bottom: 1.5rem; /* Più spazio sotto */
-    }
+.sub-title {
+    font-size: 1rem;
+    margin-bottom: 1.5rem; 
+ }
   
-    .contact-form {
-        width: 90%;
-        padding: 10px;
-        margin-bottom: 4rem; /* Più spazio sotto */
-    }
+ .contact-form {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 4rem; 
+ }
 
-    .button-full {
-        width: 100%;
-        padding: 1rem 2rem;
-    }
+.button-full {
+    width: 100%;
+    padding: 1rem 1.5rem;
+}
   
     /*/////// PAGINA PORTFOLIO //////*/
   
-    .portfolio-container {
-        grid-template-columns: 1fr; /* Una colonna */
-        width: 100%;
-    }
+.portfolio-container {
+    grid-template-columns: 1fr; /* Una colonna */
+    width: 100%;
+}
   
-    .portfolio-box {
-        width: 90%;
-        max-width: 350px;
-    }
+.portfolio-box {
+    width: 90%;
+    max-width: 350px;
+}
   
-    .portfolio-box img {
-        width: 100%;
-        height: auto; /* Mantiene le proporzioni */
-        object-fit: cover;
-    }
+.portfolio-box img {
+    width: 100%;
+    height: auto; /* Mantiene le proporzioni */
+    object-fit: cover;
+}
   
-    .portfolio-layer h4 {
-        font-size: 1.2rem;
-    }
+.portfolio-layer h4 {
+    font-size: 1.2rem;
+ }
   
-    /*////// FOOTER //////*/
-    
-    .footer {
-        flex-direction: column;
-        text-align: center;
-        padding: 1.5rem 5%;
-    }
+  
 
-    .footer-icons {
-        display: flex; /* Assicurati che sia flessibile */
-        justify-content: center;
-        gap: 1rem; /* Aggiunge spazio tra le icone */
-    }
+/*/////// PAGINA ABOUT-ME //////*/
 
-
-   /*/////// PAGINA ABOUT-ME //////*/
-
-   .hero-section {
+.hero-section {
     height: 100%;
     padding: 4rem 1.5rem;
     text-align: left;
@@ -309,57 +295,78 @@
     padding: 0.5rem 1rem;
 }
 
-    .about-section {      /*/////// ABOUT SECTION ///////*/
+.about-section {      /*/////// ABOUT SECTION ///////*/
     margin: 2rem;
-    }
+}
 
-    .about-container {
-        flex-direction: column; /* Cambia la direzione a colonna */
-        align-items: center;
-        gap: 1rem; /* Distanza tra immagine e testo */
-    }
+.about-container {
+    flex-direction: column; 
+    align-items: center;
+    gap: 1rem;
+}
 
-    .about-image {
-        width: 60%; /* Larghezza dell'immagine più grande */
-        margin-bottom: 1rem; /* Spazio sotto l'immagine */
-    }
+.about-image {
+    width: 60%; 
+    margin-bottom: 1rem; 
+}
 
-    .about-text {
-        font-size: 1rem; /* Ridurre la dimensione del testo per una lettura migliore */
-        text-align: left; /* Centra il testo */
-    }
+.about-text {
+     font-size: 1rem; 
+     text-align: left; 
+}
 
 
  
-    .education-and-skills {
+.education-and-skills { /*/////// EDUCATION AND SKILLS ///////*/
     flex-direction: column;
     align-items: center;
     gap: 2.5rem;
 
-    }
+}
     
-    .education-column, .skills-column {
+.education-column, .skills-column {
     width: 100%;
     text-align: left;
-    }
+}
 
-    .large {
+.large {
     font-size: 2rem;
-    }
+}
 
             
-
 .tool-section {
-            gap: 3rem;
-            text-align: left;
-        }
+    gap: 3rem;
+    text-align: left;
+}
 
 .tool-icons {
-        justify-content: center; 
-        }
+     justify-content: center; 
+}
     
-     .tool-icon {
-        width: 48px; /* Riduce ulteriormente la dimensione delle icone su schermi molto piccoli */
-        height: 48px; /* Riduce l'altezza delle icone su schermi molto piccoli */
-        }
-    }
+.tool-icon {
+    width: 48px; 
+    height: 48px; 
+}
+
+
+
+/*////// FOOTER //////*/
+    
+.footer {
+     flex-direction: column;
+    text-align: center;
+    padding: 1.5rem 5%;
+ }
+
+.footer-text {
+    font-size: 1rem;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; 
+}
+
+}
+
