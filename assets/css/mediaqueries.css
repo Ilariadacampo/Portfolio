@@ -1,9 +1,16 @@
 /* Media Query per dispositivi con larghezza tra 768px e 1200px */
 @media (min-width: 768px) and (max-width: 1200px) {
 
-    .custom-navbar-toggler {
-        display: none; 
+
+    /*/////// NAVBAR ///////*/
+
+    .navbar-nav .nav-link {
+        font-size: 1.1rem;
+        color: var(--bg-w-color);
+        transition: color 0.3s ease-in-out;
     }
+
+    /*///// HOMEPAGE //////*/
 
   .header {
       height: 500px;
@@ -12,15 +19,20 @@
   }
 
   .header h1 {
-      font-size: 2.5rem;
+      font-size: 6rem;
   }
 
   .header .h3-slim {
     font-weight: 600;
-    font-size: 1rem; 
+    font-size: 2rem; 
     margin-top: 1rem;
     margin-bottom: 4rem;
   }
+
+
+  .heading-h2 {  /*Titolo H2 */
+    font-size: 2.5rem;
+}
 
   .hero-section {
     padding-left: 4rem; /* Riduci il padding sinistro */
@@ -119,9 +131,13 @@
 }
 
 
+/*/////// PAGINA PORTFOLIO //////*/
+
   .portfolio-container {
     grid-template-columns: repeat(2, 1fr); /* Due colonne */
-    width: 90%;
+    width: 80%;
+    gap: 2rem;
+
 }
 
 .portfolio-box {
@@ -161,7 +177,7 @@
     /*/////// HOMEPAGE //////*/
 
     .header {
-        height: 400px;
+        height: 500px;
         background-size: cover;
         background-position: center;
     }

@@ -41,7 +41,7 @@ body {
 }
 
 .navbar-brand {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 600;
     color: var(--bg-w-color);
 }
@@ -51,16 +51,12 @@ body {
     display: flex;                
     justify-content: space-between;
     align-items: center;           /* Centra verticalmente gli elementi */
-    gap: 1.5rem;
-}
-
-.navbar-nav .nav-item {
-    margin-right: 3rem;           /* Aggiungi spazio tra gli elementi del menu */
+    gap: 3rem;
 }
 
 
 .navbar-nav .nav-link {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: var(--bg-w-color);
     transition: color 0.3s ease-in-out;
 }
