@@ -1,5 +1,7 @@
 
-/* Hero Section */
+/*////// SEZIONE HERO //////*/
+
+
 .hero-section {
     position: relative;
     width: 100%;
@@ -42,11 +44,18 @@
 
 }
 
-/* Sezione About */
+.hero-button:active {
+    background-color: var(--color-active);
+
+}
+
+/* /////// SEZIONE ABOUT //////*/
+
 .about-section {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .about-container {
@@ -54,36 +63,41 @@
     flex-wrap: wrap;
     align-items: center;
     max-width: 1200px;
-    gap: 3rem;
+    gap: 4rem;
+    margin-bottom: 2rem
 }
 
 
-.about-image { /* Stile dell'immagine */
-    flex: 1;
-    max-width: 40%;
+.about-image {
+    width: 35%; 
+    aspect-ratio: 1; 
+    position: relative; /
 }
 
 .about-image img {
+    position: absolute; 
     width: 100%;
-    border-radius: 10px;
+    height: 100%;
+    border-radius: 50%; 
+    object-fit: cover; 
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+
 }
 
 
 .about-text { /* Stile del testo */
     flex: 1;
-    max-width: 50%;
+    max-width: 100%;
     font-size: 1.2rem;
     line-height: 1.6;
 }
 
 .highlight {
     color: var(--color-accent);
-    font-weight: bold;
 }
 
 
-.custom-link { /* Stile del link */
+.custom-link { 
     color: var(--color-accent);
     text-decoration: none;
 }
@@ -92,11 +106,14 @@
     text-decoration: underline;
 }
 
+
+/* /////// SEZIONE EDUCATION AND SKILLS //////*/
+
 .education-and-skills {
     display: flex;
     justify-content: space-between;
-    padding: 4rem 10%;
-    margin-top: 4rem;
+    padding: 0 10%;
+    margin: 4rem;
     gap: 8rem;
 
 }
@@ -111,28 +128,26 @@
     font-weight: 700;
 }
 
-.body-1 {
-    color: var(--color-accent);
-    font-size: 1.3rem;
-    font-weight: 500;
-    margin-top: 1rem;
+.body-1, .body-2 {
+    font-size: 1.2rem;
 }
 
-.body-2 {
-    font-size: 1.2rem;
+.body-1 {
+    color: var(--color-accent);
+    font-weight: 500;
+    margin-top: 1rem;
 }
 
 .body {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 3rem;
+
 }
 
-/* Liste skills */
 
-.soft-skills {
-    margin-bottom: 4rem;
-
+.soft-skills { /* Liste skills */
+     margin-bottom: 4rem;
 }
 
 .skills-list {
@@ -146,25 +161,27 @@
 
 }
 
-.tool-section {
-    text-align: center; /* Centra il contenuto della sezione */
+/* /////// SEZIONE TOOLS //////*/
+
+.tool-section { 
+    text-align: center; 
+    margin-bottom: 4rem;
 }
 
 .tool-icons {
-    display: flex; /* Imposta il contenitore come un flexbox */
-    justify-content: space-evenly; /* Distribuisce lo spazio tra le icone in modo uniforme */
+    display: flex; 
+    justify-content: space-evenly; 
     flex-wrap: wrap; 
-    gap: 1.5rem; /* Aggiunge spazio tra le icone */
-    margin-top: 2.5rem; /* Distanza dalla sezione superiore */
+    gap: 1.5rem; 
 }
 
 .tool-icon {
-    width: 80px; /* Larghezza fissa per tutte le icone */
-    height: 80px; /* Altezza fissa per tutte le icone */
-    object-fit: contain; /* Mantiene le proporzioni delle icone */
-    transition: transform 0.3s ease-in-out; /* Aggiunge un effetto hover */
+    width: 80px; 
+    height: 80px; 
+    object-fit: contain; 
+    transition: transform 0.3s ease-in-out;
 }
 
 .tool-icon:hover {
-    transform: scale(1.1); /* Effetto hover */
+    transform: scale(1.1); 
 }
