@@ -8,12 +8,11 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    text-align: left; 
+    padding: 5rem;
   }
   
   .header-content {
     color:var(--bg-b-color);
-    margin-left: 5rem;
   }
   
   .header h1 {
@@ -22,15 +21,14 @@
   }
   
   
-  .header .h3-slim {
+ .header .h3-slim {
     font-weight: 600;
     font-size: 2rem; 
-    margin-top: 1rem;
-    margin-bottom: 4rem;
+    margin: 1rem 0 4rem;
   }
   
   
-  .scroll-link {
+.scroll-link {
       display: inline-block;
       margin-top: 3rem; 
       font-size: 1.5rem;
@@ -39,43 +37,39 @@
       transition: color 0.3s ease;
     }
     
-    .scroll-link:hover {
-      color: var(--second-color); /* Colore più scuro al passaggio del mouse */
+  .scroll-link:hover {
+      color: var(--second-color); 
     }
   
-  /* projects section */
+  /*////// SEZIONE PROGETTI //////*/
   
   .projects {
   text-align: center;
-  margin-top: 6rem;
-  margin-bottom: 8rem;
+  margin: 6rem 0 8rem;
   }
   
-  /* Contenitore dei progetti */
-  .projects-container {
+
+  .projects-container {   /* Contenitore dei progetti */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
   justify-items: center;
-  margin-bottom: 4rem;
   width: 100%;
+  margin-bottom: 4rem;
   }
   
-  /* Box dei singoli progetti */
   .projects-box {
   position: relative;
   border-radius: 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
   }
   
-  /* Immagine del progetto */
-  .projects-box img {
+
+  .projects-box img {   /* Immagine del progetto */
   width: 100%;
   height: auto;
   transition: all 0.5s ease-in-out;
@@ -86,14 +80,11 @@
   transform: scale(1.1);
   }
   
-  /* Sovrapposizione del progetto */
-  .projects-layer {
+
+  .projects-layer {   /* Sovrapposizione */
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--bg-b-color);
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,14 +95,11 @@
   transition: all 0.5s ease-in-out;
   }
   
-  /* Hover: mostra la sovrapposizione */
   .projects-box:hover .projects-layer {
   opacity: 1;
-  background: rgba(0, 0, 0, 0.5);
   }
   
-  /* Titolo del progetto nella sovrapposizione */
-  .projects-layer h4 {
+  .projects-layer h4 { /* Titoli */
   font-size: 1.5rem;
   color: var(--bg-w-color);
   opacity: 0;

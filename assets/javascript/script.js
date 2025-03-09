@@ -1,10 +1,14 @@
-const navbarToggler = document.querySelector('.custom-navbar-toggler');
-const menuIcon = navbarToggler.querySelector('.bi-list');
-const closeIcon = navbarToggler.querySelector('.bi-x');
-const navbarNav = document.querySelector('#navbarNav');
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.querySelector(".custom-navbar-toggler");
+    const navbarMenu = document.querySelector("#navbarNav");
+    const iconList = toggleButton.querySelector(".bi-list");
+    const iconX = toggleButton.querySelector(".bi-x");
 
-navbarToggler.addEventListener('click', () => {
-    navbarNav.classList.toggle('show'); // Mostra/nasconde il menu
-    menuIcon.classList.toggle('d-none'); // Nasconde l'hamburger
-    closeIcon.classList.toggle('d-none'); // Mostra la "X"
+    toggleButton.addEventListener("click", function () {
+        navbarMenu.classList.toggle("d-block");
+
+        // Alterna le icone
+        iconList.classList.toggle("d-none");
+        iconX.classList.toggle("d-none");
+    });
 });

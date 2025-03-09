@@ -41,9 +41,11 @@ body {
 }
 
 .navbar-brand {
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: var(--bg-w-color);
+  cursor: default;
+  user-select: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--bg-w-color) !important; /* Forza il colore */
 }
 
 
