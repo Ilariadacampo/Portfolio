@@ -131,12 +131,11 @@ color: var(--second-color) !important;
 /*////// TITOLI H2 HOMEPAGE E PORTFOLIO //////*/
 
 
- .heading-h2 { 
-    font-size: 3.2rem;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 4rem;
-
+.heading-h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-align: center; /* Allineamento centrale di default */
+  margin-bottom: 4rem; /* Margine generale per tutti i titoli */
 }
 
 /*////// SEZIONE CONTATTI //////*/

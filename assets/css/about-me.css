@@ -60,6 +60,8 @@
 /* /////// SEZIONE EDUCATION AND SKILLS //////*/
 
 .education-and-skills {
+    text-align: left; 
+    margin-bottom: 1.5rem;
     display: flex;
     justify-content: space-between;
     padding: 0 10%;
@@ -68,14 +70,14 @@
 
 }
 
-.education-column, .skills-column { /* Colonne */
-    width: 48%;
+.education-and-skills .heading-h2 {
+    text-align: left; /* Allineamento a sinistra solo nella sezione About Me */
+    margin-bottom: 1.5rem; /* Margine specifico per questa sezione */
+    font-size: 3rem; /* Dimensione specifica per questa sezione */
 }
 
-.large {
-    margin-bottom: 1.5rem;
-    font-size: 3rem;
-    font-weight: 700;
+.education-column, .skills-column { /* Colonne */
+    width: 48%;
 }
 
 .body-1, .body-2 {

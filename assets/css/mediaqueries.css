@@ -97,7 +97,6 @@
 }
 
 
-
 .about-text {
     font-size: 1.1rem; 
     max-width: 900px; 
@@ -177,6 +176,9 @@
     font-size: 1.2rem;
 }
 
+.education-and-skills .heading-h2 {
+    font-size: 2rem;
+}
 
 /* Hero Section padding */
 .hero-section {
@@ -296,11 +298,7 @@
     text-align: left;
 }
 
-.large {
-    font-size: 2rem;
-}
 
-            
 .tool-section {
     gap: 3rem;
     text-align: left;
