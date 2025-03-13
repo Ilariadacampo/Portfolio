@@ -1,5 +1,7 @@
-/*////// Stile per il bottone Scroll //////*/
-.scroll-link {
+
+/*////// STILE PER IL BOTTONE SCROLL //////*/
+
+.scroll-link { 
   display: inline-block;
   margin-top: 3rem;
   font-size: 1.5rem;
@@ -12,78 +14,51 @@
   color: var(--second-color);
 }
 
+.scroll-link:active {
+  color: var(--color-active);
+}
 
-  /*////// SEZIONE PROGETTI //////*/
-  
-  .projects {
-  text-align: center;
-  margin: 6rem 0 8rem;
-  }
-  
 
-  .projects-container {   /* Contenitore dei progetti */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
-  justify-items: center;
-  width: 100%;
-  margin-bottom: 4rem;
-  }
+/*////// SEZIONE PROGETTI //////*/
   
-  .projects-box {
-  position: relative;
-  border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.projects {
+text-align: center;
+margin: 6rem 0 8rem;
   }
   
 
-  .projects-box img {   /* Immagine del progetto */
-  width: 100%;
-  height: auto;
-  transition: all 0.5s ease-in-out;
-  }
+.projects-container {   /* Contenitore dei progetti */
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2.5rem;
+justify-items: center;
+width: 100%;
+margin-bottom: 4rem;
+}
   
-  /* Hover sull'immagine: ingrandisce */
-  .projects-box:hover img {
-  transform: scale(1.1);
-  }
+.projects-box {
+position: relative;
+border-radius: 1rem;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+}
   
 
-  .projects-layer {   /* Sovrapposizione */
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 0 2rem;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
-  }
+.projects-box img {   /* Immagine del progetto */
+width: 100%;
+height: auto;
+transition: all 0.5s ease-in-out;
+}
   
-  .projects-box:hover .projects-layer {
-  opacity: 1;
-  }
+ 
+.projects-box:hover img {  /* Hover sull'immagine: ingrandisce */
+transform: scale(1.1);
+}
   
-  .projects-layer h4 { /* Titoli */
-  font-size: 1.5rem;
-  color: var(--bg-w-color);
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-  }
-  
-  /* Hover: titolo del progetto visibile */
-  .projects-box:hover .projects-layer h4 {
-  opacity: 1;
-  transform: translateY(0);
-  }
-  
+
+
   
   

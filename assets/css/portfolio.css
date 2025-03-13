@@ -42,39 +42,3 @@
 }
 
 
-.portfolio-layer { /* Sovrapposizione del progetto */
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 0 2rem;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out, background 0.5s ease-in-out;
-}
-
-
-.portfolio-box:hover .portfolio-layer {
-    opacity: 1;
-    background: rgba(0, 0, 0, 0.6);
-}
-
-
-.portfolio-layer h4 {
-    font-size: 1.5rem;
-    color: var(--bg-w-color);
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.5s ease-in-out;
-}
-
-
-.portfolio-box:hover .portfolio-layer h4 {
-    opacity: 1;
-    transform: translateY(0);
-} 

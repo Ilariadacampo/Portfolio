@@ -271,3 +271,39 @@ color: var(--second-color) !important;
 .button-full {
   width: 100%;
 }
+
+/* Sovrapposizione comune per portfolio e projects */
+.layer { /* Sovrapposizione del progetto */
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 2rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, background 0.5s ease-in-out;
+}
+
+/* Hover per la sovrapposizione */
+.portfolio-box:hover .layer, .projects-box:hover .layer {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Titoli comuni per portfolio e projects */
+.layer h4 {
+  font-size: 1.5rem;
+  color: var(--bg-w-color);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease-in-out;
+}
+
+/* Hover per il titolo del progetto visibile */
+.portfolio-box:hover .layer h4, .projects-box:hover .layer h4 {
+  opacity: 1;
+  transform: translateY(0);
+}
