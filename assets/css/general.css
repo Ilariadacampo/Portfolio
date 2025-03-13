@@ -49,6 +49,14 @@ body {
 }
 
 
+.navbar-brand:hover {
+color: var(--second-color) !important; 
+}
+
+.navbar-brand:active {
+  color: var(--color-active) !important; 
+  }
+
 .navbar-nav {
     display: flex;                
     justify-content: space-between;
@@ -234,14 +242,8 @@ body {
 
 
 
- /*////// STILE GENERICO PER I BOTTONI //////*/
+/*////// STILE GENERICO PER I BOTTONI //////*/
 
-.button-container {
-  display: flex;
-  justify-content: center;
-  }
-
-  
 .button {
   background-color: var(--bg-b-color);
   color: var(--bg-w-color);
@@ -250,11 +252,7 @@ body {
   border-radius: 5px;
   font-size: 1.2rem;
   text-decoration: none; /* Rimuove la sottolineatura */
-  transition: background-color 0.5s ease
-}
-
-.button-full {
-  width: 100%;
+  transition: background-color 0.5s ease;
 }
 
 .button:hover {
@@ -263,4 +261,14 @@ body {
 
 .button:active {
   background-color: var(--color-active);
+}
+
+/* Se vuoi personalizzare i bottoni in alcune sezioni, come nel caso di About Me */
+.hero-button {
+  padding: 1rem 2rem; /* Puoi aggiungere padding diverso se necessario */
+}
+
+/* Stile per il bottone a tutta larghezza */
+.button-full {
+  width: 100%;
 }

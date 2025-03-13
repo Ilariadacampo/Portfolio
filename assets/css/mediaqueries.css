@@ -96,17 +96,6 @@
     margin-bottom: 4rem;
 }
 
-/* Hero Section Button */
-.hero-button {
-    font-size: 1.1rem;
-    padding: 0.8rem 1.5rem;
-}
-
-.about-text {
-    font-size: 1.1rem; 
-    max-width: 900px; 
-    width: 100%;
-}
 
 
 .about-text {
@@ -188,11 +177,6 @@
     font-size: 1.2rem;
 }
 
-/* Hero Section Button */
-.hero-button {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-}
 
 /* Hero Section padding */
 .hero-section {
