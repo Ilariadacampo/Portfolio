@@ -1,3 +1,17 @@
+/*////// Stile per il bottone Scroll //////*/
+.scroll-link {
+  display: inline-block;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.scroll-link:hover {
+  color: var(--second-color);
+}
+
 
   /*////// SEZIONE PROGETTI //////*/
   

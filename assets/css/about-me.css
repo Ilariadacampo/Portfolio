@@ -1,33 +1,5 @@
 
-/*////// SEZIONE HERO //////*/
-
-
-.hero-section {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-image: url('../media/web.svg'); /* Sostituisci con l'immagine corretta */
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    padding-left: 5rem;
-}
-
-
-.hero-title {
-    font-size: 8rem;
-    font-weight: 800;
-    margin-bottom: 1rem;
-}
-
-.hero-subtitle {
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin-bottom: 4rem;
-}
-
+/* Stile per il bottone CV (About-Me) */
 .hero-button {
     display: inline-block;
     padding: 0.8rem 2rem;
@@ -37,17 +9,16 @@
     border-radius: 5px;
     text-decoration: none;
     transition: background 0.3s ease;
-}
-
-.hero-button:hover {
+  }
+  
+  .hero-button:hover {
     background-color: var(--second-color);
-
-}
-
-.hero-button:active {
+  }
+  
+  .hero-button:active {
     background-color: var(--color-active);
-
-}
+  }
+  
 
 /* /////// SEZIONE ABOUT //////*/
 

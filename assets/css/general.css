@@ -117,39 +117,6 @@ body {
   margin-bottom: 4rem;
 }
 
-/* Stile per il bottone Scroll (Index) */
-.scroll-link {
-  display: inline-block;
-  margin-top: 3rem;
-  font-size: 1.5rem;
-  color: var(--color-accent);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.scroll-link:hover {
-  color: var(--second-color);
-}
-
-/* Stile per il bottone CV (About-Me) */
-.hero-button {
-  display: inline-block;
-  padding: 0.8rem 2rem;
-  background-color: var(--bg-b-color);
-  color: var(--bg-w-color);
-  font-size: 1.2rem;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-.hero-button:hover {
-  background-color: var(--second-color);
-}
-
-.hero-button:active {
-  background-color: var(--color-active);
-}
 
 
 

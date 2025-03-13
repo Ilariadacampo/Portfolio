@@ -10,26 +10,6 @@
     transition: color 0.3s ease-in-out;
 }
 
-    /*///// HOMEPAGE //////*/
-
-.header {
-    height: 500px;
-    background-size: cover;
-    background-position: center;
-}
-
-.header h1 {
-    font-size: 6rem;
-}
-
-.header .h3-slim {
-    font-weight: 600;
-    font-size: 2rem; 
-    margin-top: 1rem;
-    margin-bottom: 4rem;
-}
-
-
 .heading-h2 {  /*Titolo H2 */
     font-size: 2.5rem;
 }
@@ -93,25 +73,41 @@
 }
 
 
-/*///// PAGINA ABOUT ME //////*/
+/*///// PAGINA HOMEPAGE E ABOUT ME //////*/
 
-.hero-section {
+
+.hero-section, .header {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
     padding: 0 4rem;
-    text-align: left;
 }
 
-.hero-title {
-    font-size: 4.5rem; 
+/* Header e Hero Title */
+.hero-section h1, .header h1 {
+    font-size: 6rem;
 }
 
-.hero-subtitle {
-    font-size: 1.5rem;
+/* Header Subtitle */
+.header .h3-slim, .hero-section .hero-subtitle {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
 }
 
+/* Hero Section Button */
 .hero-button {
     font-size: 1.1rem;
-    padding: 0.8rem 1.5rem; 
+    padding: 0.8rem 1.5rem;
 }
+
+.about-text {
+    font-size: 1.1rem; 
+    max-width: 900px; 
+    width: 100%;
+}
+
 
 .about-text {
     font-size: 1.1rem; 
@@ -166,35 +162,42 @@
     font-size: 1rem;
 }
 
+  /*///// Sezioni Homepage e About-Me //////*/
 
-    /*/////// HOMEPAGE //////*/
-
-.header {
+  .hero-section, .header {
     height: 500px;
     background-size: cover;
     background-position: center;
     padding: 2rem;
- }
-  
-
-.header h1 {
-     font-size: 3rem;
 }
-  
-.heading-h2 {
-    font-size: 2rem;
- }
-  
-.header .h3-slim {
+
+/* Header e Hero Title */
+.hero-section h1, .header h1 {
+    font-size: 3rem;
+}
+
+/* Header Subtitle */
+.header .h3-slim, .hero-section .hero-subtitle {
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
 
+/* Scroll Link */
 .scroll-link { 
     margin-top: 0; 
     font-size: 1.2rem;
 }
 
+/* Hero Section Button */
+.hero-button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+/* Hero Section padding */
+.hero-section {
+    padding: 4rem 1.5rem;
+}
 
 
 .projects { /*///// SEZIONE PROGETTI //////*/
@@ -273,27 +276,7 @@
   
   
 
-/*/////// PAGINA ABOUT-ME //////*/
 
-.hero-section {
-    height: 100%;
-    padding: 4rem 1.5rem;
-    text-align: left;
-}
-
-.hero-title {
-    font-size: 3rem;
-}
-
-.hero-subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
-.hero-button {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-}
 
 .about-section {      /*/////// ABOUT SECTION ///////*/
     margin: 2rem;
