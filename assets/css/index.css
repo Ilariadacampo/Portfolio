@@ -1,46 +1,4 @@
 
-.header {
-    position: relative;
-    width: 100%;
-    height: calc(100vh - 72px);
-    background-image: url('../media/web.svg');
-    background-size: cover;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    padding: 5rem;
-  }
-  
-  .header-content {
-    color:var(--bg-b-color);
-  }
-  
-  .header h1 {
-    font-size: 8rem; 
-    font-weight: 800;
-  }
-  
-  
- .header .h3-slim {
-    font-weight: 600;
-    font-size: 2rem; 
-    margin: 1rem 0 4rem;
-  }
-  
-  
-.scroll-link {
-      display: inline-block;
-      margin-top: 3rem; 
-      font-size: 1.5rem;
-      color: var(--color-accent);
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    
-  .scroll-link:hover {
-      color: var(--second-color); 
-    }
-  
   /*////// SEZIONE PROGETTI //////*/
   
   .projects {

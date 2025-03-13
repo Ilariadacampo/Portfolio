@@ -87,6 +87,71 @@ body {
   font-size: 2rem; 
 }
 
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 72px);
+  background-image: url('../media/web.svg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 5rem;
+}
+
+.hero-content {
+  color: var(--bg-b-color);
+}
+
+.hero-title,
+.hero-section h1 {
+  font-size: 8rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+}
+
+/* Stile per il bottone Scroll (Index) */
+.scroll-link {
+  display: inline-block;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.scroll-link:hover {
+  color: var(--second-color);
+}
+
+/* Stile per il bottone CV (About-Me) */
+.hero-button {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: var(--bg-b-color);
+  color: var(--bg-w-color);
+  font-size: 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: var(--second-color);
+}
+
+.hero-button:active {
+  background-color: var(--color-active);
+}
+
+
 
 /*////// TITOLI H2 HOMEPAGE E PORTFOLIO //////*/
 
