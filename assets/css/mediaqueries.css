@@ -1,24 +1,15 @@
 /* Media Query per dispositivi con larghezza tra 768px e 1200px */
+
 @media (min-width: 768px) and (max-width: 1200px) {
 
 
-    /*/////// NAVBAR ///////*/
+/*/////// NAVBAR ///////*/
 
 .navbar-nav .nav-link {
      font-size: 1.1rem;
     color: var(--bg-w-color);
     transition: color 0.3s ease-in-out;
 }
-
-.heading-h2 {  /*Titolo H2 */
-    font-size: 2.5rem;
-}
-
-.projects-container {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-
 
 
 /*///// PAGINA HOMEPAGE E ABOUT ME //////*/
@@ -31,8 +22,7 @@
     padding: 0 4rem;
 }
 
-/* Header e Hero Title */
-.hero-title {
+.hero-title { /*Titolo H1 */
     font-size: 6rem;
 }
 
@@ -44,6 +34,21 @@
     margin-bottom: 4rem;
 }
 
+.heading-h2 {  /*Titolo H2 */
+    font-size: 2.5rem;
+}
+
+.projects-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+/*///// PAGINA ABOUT ME //////*/
+
+.about-section {      /*/////// ABOUT SECTION ///////*/
+    margin: 2rem;
+}
 
 .about-text {
     font-size: 1.1rem; 
@@ -62,7 +67,10 @@
 }
 
 
-.tool-icons { /*////// SEZIONE TOOLS //////*/
+/*////// SEZIONE TOOLS //////*/
+
+
+.tool-icons { 
     justify-content: space-between; 
     margin-top: 3rem;
 }
@@ -92,7 +100,9 @@
 
 
 
-.contact-form {     /*///// CONTACT FORM //////*/
+/*///// CONTACT FORM //////*/
+
+.contact-form {     
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -154,7 +164,7 @@
 
 
 
-  /*///// HEADER HOMEPAGE e ABOUT-ME //////*/
+/*///// HEADER HOMEPAGE e ABOUT ME //////*/
 
 .hero-section, .header {
     height: 500px;
@@ -182,13 +192,10 @@
     font-size: 2rem;
 }
 
-/* Hero Section padding */
-.hero-section {
-    padding: 4rem 1.5rem;
-}
 
+/*///// SEZIONE PROGETTI //////*/
 
-.projects { /*///// SEZIONE PROGETTI //////*/
+.projects { 
     margin-bottom: 4rem;
     }
   
@@ -217,8 +224,9 @@
 }
 
   
+ /*///// CONTACT FORM //////*/
 
-.contact h2 {  /*///// CONTACT FORM //////*/
+.contact h2 { 
     font-size: 2rem;
     margin-top: 3rem; 
     text-wrap: nowrap;
@@ -259,10 +267,10 @@
 }
 
   
+ /*/////// PAGINA ABOUT ME //////*/
+/*/////// ABOUT SECTION ///////*/
 
-
-
-.about-section {      /*/////// ABOUT SECTION ///////*/
+.about-section {      
     margin: 2rem;
 }
 
@@ -282,9 +290,9 @@
      text-align: left; 
 }
 
-
+/*/////// EDUCATION AND SKILLS ///////*/
  
-.education-and-skills { /*/////// EDUCATION AND SKILLS ///////*/
+.education-and-skills { 
     flex-direction: column;
     align-items: center;
     gap: 2.5rem;
@@ -302,6 +310,9 @@
     margin-bottom: 3rem;
 
 }
+
+
+
 
 .tool-section {
     gap: 3rem;
