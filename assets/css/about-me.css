@@ -35,7 +35,7 @@
 }
 
 
-.about-text { /* Stile del testo */
+.about-text { /* Stile del testo sezione about*/
     flex: 1;
     max-width: 100%;
     font-size: 1.2rem;
@@ -71,9 +71,9 @@
 }
 
 .education-and-skills .heading-h2 {
-    text-align: left; /* Allineamento a sinistra solo nella sezione About Me */
-    margin-bottom: 1.5rem; /* Margine specifico per questa sezione */
-    font-size: 3rem; /* Dimensione specifica per questa sezione */
+    text-align: left; 
+    margin-bottom: 1.5rem; 
+    font-size: 3rem;
 }
 
 .education-column, .skills-column { /* Colonne */
@@ -91,7 +91,7 @@
 }
 
 .body {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 3rem;
 

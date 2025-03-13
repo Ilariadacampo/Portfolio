@@ -1,27 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
 
 :root {
-    --color-accent: #ec4899; 
-    --second-color:#f472b6; 
-    --bg-w-color: #ffffff;
-    --bg-b-color: #212529; 
-    --color-active:#db2777; 
+  --color-accent: #ec4899; 
+  --second-color:#f472b6; 
+  --bg-w-color: #ffffff;
+  --bg-b-color: #212529; 
+  --color-active:#db2777; 
 
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    outline: none;
-    scroll-behavior: smooth;
-    font-family: 'Geist', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Geist', sans-serif;
 }
 
 html {
-    font-size: 16px;
-    overflow-x: hidden;
+  font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
@@ -32,12 +32,12 @@ body {
 /*/////// NAV BAR //////*/
 
 .navbar-container {
-    width: 100%;
+  width: 100%;
 }
 
 .navbar {
-    padding: 1rem 5%;
-    width: 100%;
+  padding: 1rem 5%;
+  width: 100%;
 }
 
 .navbar-brand {
@@ -50,35 +50,37 @@ body {
 
 
 .navbar-brand:hover {
-color: var(--second-color) !important; 
+  color: var(--second-color) !important; 
 }
 
 .navbar-brand:active {
   color: var(--color-active) !important; 
-  }
+}
 
 .navbar-nav {
-    display: flex;                
-    justify-content: space-between;
-    align-items: center;           
-    gap: 3rem;
+  display: flex;                
+  justify-content: space-between;
+  align-items: center;           
+  gap: 3rem;
 }
 
 
 .navbar-nav .nav-link {
-    font-size: 1.3rem;
-    color: var(--bg-w-color);
-    transition: color 0.3s ease-in-out;
+  font-size: 1.3rem;
+  color: var(--bg-w-color);
+  transition: color 0.3s ease-in-out;
 }
 
 
 .navbar-nav .nav-link:hover {
-    color: var(--second-color); 
+  color: var(--second-color); 
 }
 
 .navbar-nav .nav-link.active {
-  color: var(--color-active); 
+color: var(--color-active); 
 }
+
+/*/////// NAV BAR MOBILE //////*/
 
 .custom-navbar-toggler {
   background: none;
@@ -94,6 +96,9 @@ color: var(--second-color) !important;
 .custom-navbar-toggler .bi-x {
   font-size: 2rem; 
 }
+
+
+/*/////// SEZIONE HERO HOMEPAGE E ABOUT ME //////*/
 
 .hero-section {
   position: relative;
@@ -126,30 +131,60 @@ color: var(--second-color) !important;
 }
 
 
+/*////// STILE GENERICO PER I BOTTONI //////*/
+
+.button {
+  background-color: var(--bg-b-color);
+  color: var(--bg-w-color);
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-decoration: none; 
+  transition: background-color 0.5s ease;
+}
+
+.button:hover {
+  background-color: var(--second-color);
+}
+
+.button:active {
+  background-color: var(--color-active);
+}
+
+.hero-button { /* Bottone about-me */
+  padding: 1rem 2rem; /* Puoi aggiungere padding diverso se necessario */
+}
+
+.button-full {  /*Bottone contact form */
+  width: 100%;
+}
+
+
 
 
 /*////// TITOLI H2 HOMEPAGE E PORTFOLIO //////*/
 
-
 .heading-h2 {
   font-size: 3.2rem;
   font-weight: 700;
-  text-align: center; /* Allineamento centrale di default */
-  margin-bottom: 4rem; /* Margine generale per tutti i titoli */
+  margin-bottom: 4rem; 
 }
+
+
 
 /*////// SEZIONE CONTATTI //////*/
 
 .contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; 
-    background-image: url('../media/web_2.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  background-image: url('../media/web_2.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
   }
   
   .contact h2 {
@@ -207,17 +242,17 @@ color: var(--second-color) !important;
 /*////// FOOOTER //////*/
 
 .footer { 
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 5%;
-    background: var(--bg-b-color);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5%;
+  background: var(--bg-b-color);
 }
 
 .footer-text {
-    font-size: 1.2rem;
-    color: var(--bg-w-color);
+  font-size: 1.2rem;
+  color: var(--bg-w-color);
 }
 .footer-icons {
   display: flex; 
@@ -232,47 +267,15 @@ color: var(--second-color) !important;
   }
 
   .footer-icons a:hover{
-     color: var(--second-color);
+    color: var(--second-color);
   }
   .footer-icons a:active{
-    color: var(--color-active);
+  color: var(--color-active);
  }
 
 
 
-
-/*////// STILE GENERICO PER I BOTTONI //////*/
-
-.button {
-  background-color: var(--bg-b-color);
-  color: var(--bg-w-color);
-  padding: 1rem;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  text-decoration: none; /* Rimuove la sottolineatura */
-  transition: background-color 0.5s ease;
-}
-
-.button:hover {
-  background-color: var(--second-color);
-}
-
-.button:active {
-  background-color: var(--color-active);
-}
-
-/* Se vuoi personalizzare i bottoni in alcune sezioni, come nel caso di About Me */
-.hero-button {
-  padding: 1rem 2rem; /* Puoi aggiungere padding diverso se necessario */
-}
-
-/* Stile per il bottone a tutta larghezza */
-.button-full {
-  width: 100%;
-}
-
-/* Sovrapposizione comune per portfolio e projects */
+/* SOVRAPPOSIZIONE COMUNE PER LA SEZIONE PORTFOLIO e PROGETTI */
 .layer { /* Sovrapposizione del progetto */
   position: absolute;
   inset: 0;
