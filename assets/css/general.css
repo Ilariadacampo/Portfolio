@@ -117,11 +117,11 @@ color: var(--color-active);
   color: var(--bg-b-color);
 }
 
-.hero-title,
-.hero-section h1 {
+.hero-title {
   font-size: 8rem;
   font-weight: 800;
-  margin-bottom: 1rem;
+  color: var(--text-color);
+  text-align: left;
 }
 
 .hero-subtitle {
@@ -275,7 +275,8 @@ color: var(--color-active);
 
 
 
-/* SOVRAPPOSIZIONE COMUNE PER LA SEZIONE PORTFOLIO e PROGETTI */
+/* ////// SOVRAPPOSIZIONE COMUNE PER LA SEZIONE PORTFOLIO e PROGETTI //////*/
+
 .layer { /* Sovrapposizione del progetto */
   position: absolute;
   inset: 0;
@@ -290,14 +291,14 @@ color: var(--color-active);
   transition: opacity 0.5s ease-in-out, background 0.5s ease-in-out;
 }
 
-/* Hover per la sovrapposizione */
-.portfolio-box:hover .layer, .projects-box:hover .layer {
+
+.portfolio-box:hover .layer, .projects-box:hover .layer { /* Hover per la sovrapposizione */
   opacity: 1;
   background: rgba(0, 0, 0, 0.6);
 }
 
-/* Titoli comuni per portfolio e projects */
-.layer h4 {
+
+.layer h4 {  /* Titoli comuni */
   font-size: 1.5rem;
   color: var(--bg-w-color);
   opacity: 0;
@@ -305,7 +306,6 @@ color: var(--color-active);
   transition: all 0.5s ease-in-out;
 }
 
-/* Hover per il titolo del progetto visibile */
 .portfolio-box:hover .layer h4, .projects-box:hover .layer h4 {
   opacity: 1;
   transform: translateY(0);

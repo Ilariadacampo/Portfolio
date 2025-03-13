@@ -19,58 +19,6 @@
 }
 
 
-.contact-form {     /*///// CONTACT FORM //////*/
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 600px;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-
-.contact h2 {
-    font-size: 2rem;
-    margin-top: 2rem; 
-}
-
-.sub-title {
-    font-size: 1rem;
-    margin-bottom: 2.5rem; /
-}
-
-.contact-form {
-    padding: 15px;
-    margin-bottom: 3rem; 
-}
-
-.button {
-    font-size: 1rem;
-    padding: 1rem;
-}
-
-.button-full {
-    width: 100%;
-}
-
-
-/*/////// PAGINA PORTFOLIO //////*/
-
-.portfolio-container {
-    grid-template-columns: repeat(2, 1fr); /* Due colonne */
-    width: 80%;
-    gap: 2rem;
-}
-
-.portfolio-box {
-    max-width: 400px;
-}
-
-.portfolio-box img {
-    width: 100%;
-    height: auto; 
-    object-fit: cover;
-}
 
 
 /*///// PAGINA HOMEPAGE E ABOUT ME //////*/
@@ -84,12 +32,12 @@
 }
 
 /* Header e Hero Title */
-.hero-section h1, .header h1 {
+.hero-title {
     font-size: 6rem;
 }
 
 /* Header Subtitle */
-.header .h3-slim, .hero-section .hero-subtitle {
+.hero-subtitle{
     font-weight: 600;
     font-size: 2rem;
     margin-top: 1rem;
@@ -124,6 +72,60 @@
     height: 50px;
 }
 
+/*/////// PAGINA PORTFOLIO //////*/
+
+.portfolio-container {
+    grid-template-columns: repeat(2, 1fr); /* Due colonne */
+    width: 80%;
+    gap: 2rem;
+}
+
+.portfolio-box {
+    max-width: 400px;
+}
+
+.portfolio-box img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+}
+
+
+
+.contact-form {     /*///// CONTACT FORM //////*/
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.contact h2 {
+    font-size: 2rem;
+    margin-top: 2rem; 
+}
+
+.sub-title {
+    font-size: 1rem;
+    margin-bottom: 2.5rem; /
+}
+
+.contact-form {
+    padding: 15px;
+    margin-bottom: 3rem; 
+}
+
+.button {
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.button-full {
+    width: 100%;
+}
+
 }
 
 
@@ -133,7 +135,7 @@
 
 @media (max-width: 767px) {
 
-    /*/////// NAVBAR ///////*/
+/*/////// NAVBAR ///////*/
 
 .navbar-nav {
     text-align: left;
@@ -150,28 +152,28 @@
     font-size: 1rem;
 }
 
-  /*///// Sezioni Homepage e About-Me //////*/
 
-  .hero-section, .header {
+
+  /*///// HEADER HOMEPAGE e ABOUT-ME //////*/
+
+.hero-section, .header {
     height: 500px;
     background-size: cover;
     background-position: center;
     padding: 2rem;
 }
 
-/* Header e Hero Title */
-.hero-section h1, .header h1 {
+.hero-title {
     font-size: 3rem;
 }
 
-/* Header Subtitle */
-.header .h3-slim, .hero-section .hero-subtitle {
+.hero-subtitle {
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
 
-/* Scroll Link */
-.scroll-link { 
+
+.scroll-link {  /* Scroll Link */
     margin-top: 0; 
     font-size: 1.2rem;
 }
@@ -294,6 +296,12 @@
     text-align: left;
 }
 
+.body {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+
+}
 
 .tool-section {
     gap: 3rem;
