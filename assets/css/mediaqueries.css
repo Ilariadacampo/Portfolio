@@ -43,8 +43,25 @@
 }
 
 
+.manifesto {
+    padding: 2.5rem 0;
+    margin-bottom: 7rem;
+  }
 
-/*///// PAGINA ABOUT ME //////*/
+  .manifesto-content {
+    padding: 3rem 1.5rem;
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .manifesto p:first-of-type {
+    font-size: 1.6rem;  /
+  }
+
+  .manifesto p {
+    font-size: 1.2rem;  
+  }
+
 
 .about-section {      /*/////// ABOUT SECTION ///////*/
     margin: 2rem;
@@ -191,6 +208,25 @@
 .education-and-skills .heading-h2 {
     font-size: 2rem;
 }
+
+.manifesto {
+    padding: 1.5rem 0;
+    margin-bottom: 5rem;
+  }
+
+  .manifesto-content {
+    padding: 2rem 1rem;
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .manifesto p:first-of-type {
+    font-size: 1.4rem; 
+  }
+
+  .manifesto p {
+    font-size: 1rem; 
+  }
 
 
 /*///// SEZIONE PROGETTI //////*/
