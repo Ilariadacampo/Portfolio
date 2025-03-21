@@ -96,7 +96,7 @@ color: var(--color-active);
 }
 
 
-/*/////// SEZIONE HERO HOMEPAGE E ABOUT ME //////*/
+/*/////// SEZIONE HERO DELLA HOMEPAGE E PAGINA ABOUT ME  //////*/
 
 .hero-section {
   position: relative;
@@ -107,7 +107,6 @@ color: var(--color-active);
   background-position: center;
   display: flex;
   align-items: center;
-  justify-content: left;
   padding-left: 5rem;
 }
 
@@ -118,7 +117,6 @@ color: var(--color-active);
 .hero-title {
   font-size: 8rem;
   font-weight: 800;
-  color: var(--text-color);
   text-align: left;
 }
 
@@ -126,6 +124,61 @@ color: var(--color-active);
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 4rem;
+}
+
+/* /////// SEZIONE ABOUT //////*/
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1200px;
+  gap: 4rem;
+  margin-bottom: 2rem
+}
+
+
+.about-image {
+  width: 35%; 
+  aspect-ratio: 1; 
+  position: relative; 
+}
+
+.about-image img {
+  position: absolute; 
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; 
+  object-fit: cover; 
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.about-text { /* Stile del testo sezione about*/
+flex: 1;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: var(--color-accent);
+}
+
+
+.custom-link { 
+  color: var(--color-accent);
+}
+
+.custom-link:hover {
+  text-decoration: underline;
 }
 
 
@@ -309,58 +362,3 @@ color: var(--color-active);
   transform: translateY(0);
 }
 
-/* /////// SEZIONE ABOUT //////*/
-
-.about-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-.about-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  max-width: 1200px;
-  gap: 4rem;
-  margin-bottom: 2rem
-}
-
-
-.about-image {
-  width: 35%; 
-  aspect-ratio: 1; 
-  position: relative; 
-}
-
-.about-image img {
-  position: absolute; 
-  width: 100%;
-  height: 100%;
-  border-radius: 50%; 
-  object-fit: cover; 
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-
-}
-
-
-.about-text { /* Stile del testo sezione about*/
-  flex: 1;
-  max-width: 100%;
-  font-size: 1.2rem;
-  line-height: 1.6;
-}
-
-.highlight {
-  color: var(--color-accent);
-}
-
-
-.custom-link { 
-  color: var(--color-accent);
-}
-
-.custom-link:hover {
-  text-decoration: underline;
-}

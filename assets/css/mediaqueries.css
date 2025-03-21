@@ -26,8 +26,8 @@
     font-size: 6rem;
 }
 
-/* Header Subtitle */
-.hero-subtitle{
+
+.hero-subtitle{ /* Header Subtitle */
     font-weight: 600;
     font-size: 2rem;
     margin-top: 1rem;
@@ -346,8 +346,6 @@
     margin-bottom: 3rem;
 
 }
-
-
 
 
 .tool-section {
